@@ -1,0 +1,17 @@
+citHeader("To cite package seas in publications use:")
+
+# in review
+citEntry(entry="article",
+        title = "Seasonal statistics: the 'seas' package for R",
+        author = personList(person("Michael","Toews","W.","mwtoews@sfu.ca"),
+	         person("Paul","Whitfield","H.","paul.whitfield@ec.gc.ca"),
+                 person("Diana","Allen","M.","dallen@sfu.ca")),
+        journal = "Computers \\& Geosciences",
+        year = 2007,
+        volume = {33},
+        pages = {944--951},
+        number = {7},
+        doi = "10.1016/j.cageo.2006.11.011",
+        textVersion =
+        paste("Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal statistics: The 'seas' package for R. Computers & Geosciences, 33(7): 944-951. doi:10.1016/j.cageo.2006.11.011")
+)

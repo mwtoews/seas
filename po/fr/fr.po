@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: R 2.2.1\n"
+"Report-Msgid-Bugs-To: bugs@r-project.org\n"
+"POT-Creation-Date: 2006-03-03 08:25\n"
+"PO-Revision-Date: 2006-03-05 08:03-0800\n"
+"Last-Translator: Michael Toews <mwtoews@sfu.ca>\n"
+"Language-Team: French <R-core@r-project.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+msgid "problems encountered while trying to find %s in names of dat1 and dat2 for %s argument"
+msgstr ""
+
+msgid "no overlap of data"
+msgstr ""
+
+msgid "no variance to data"
+msgstr ""
+
+msgid "%s not found in %s"
+msgstr ""
+
+msgid "%s-day group"
+msgstr "groupe de %s jour"
+
+msgid "Monthly"
+msgstr "Mensuel"
+
+msgid "Zodiac"
+msgstr "Zodiaque "
+
+msgid "Quarterly (seasonal)"
+msgstr "Quartarly (saisonnier)"
+
+msgid "Quarterly (annual)"
+msgstr "Quartarly (annuel)"
+
+msgid "Two months"
+msgstr "Deux mois"
+
+msgid "from"
+msgstr "de"
+
+msgid "to"
+msgstr "à"
+
+msgid "%s is not a %s object"
+msgstr "%s n'est pas des %s"
+
+msgid "option %s only works if %s"
+msgstr ""
+
+msgid "no data"
+msgstr "aucunes données"
+
+msgid "year"
+msgstr "année"
+
+msgid "sample quantiles (%)"
+msgstr "quantiles d'échantillon (%)"
+
+msgid "%s/day"
+msgstr "%s/jour"
+
+msgid "annual (%s)"
+msgstr "annuel (%s)"
+
+msgid "could not find %s in %s"
+msgstr ""
+
+msgid "%s width argument not supported"
+msgstr ""
+
+msgid "a %s column must exist in %s"
+msgstr ""
+
+msgid "%s must be either %s or %s class"
+msgstr ""
+
+msgid "no data at %s"
+msgstr ""
+
+msgid "multiple IDs found in %s; using first ID: %s"
+msgstr ""
+
+msgid "%s is not an %s object"
+msgstr ""
+
+msgid "wet days"
+msgstr "jours pluvieux"
+
+msgid "dry days"
+msgstr "jours sans pluie"
+
+msgid "%s < maximum width value; not a good plot"
+msgstr ""
+
+msgid "... should be no less than %.1f"
+msgstr ""
+
+msgid "%s/year"
+msgstr "%s/an"
+
+msgid "%.1f days with %s"
+msgstr "%.1f jours avec la %s"
+
+msgid "Total %s %.1f %s"
+msgstr "Totale %s %.1f %s"
+
+msgid "%.1f days with precipitation"
+msgstr "%.1f jours avec la précipitation"
+
+msgid "Rain %.1f"
+msgstr "Pluie %.1f"
+
+msgid "Snow %.1f"
+msgstr "Neige %.1f"
+
+msgid "Total %.1f %s"
+msgstr "Totale %.1f %s"
+
+msgid "%s is not a %s"
+msgstr ""
+
+msgid "%s must give the slope and intercept\nbetween the primary and secondary axis;\n use %s"
+msgstr ""
+
+msgid "%s not recognized"
+msgstr ""
+
+msgid "must be C, F or K"
+msgstr ""
+
+msgid "..."
+msgstr "..."
+
+msgid "temperature %s%s"
+msgstr "température %s%s"
+
+msgid "calculating mean temperatures from min and max temperatures"
+msgstr ""
+
+msgid "temperature data not found in %s"
+msgstr ""
+
+msgid "%s%s"
+msgstr "%s%s"
+
+msgid "total precipitation (%s/year)"
+msgstr "précipitation totale "
+
+msgid "%s must either be a data.frame or a list"
+msgstr ""
+
+msgid "%s must be a character string or connection"
+msgstr ""
+
+msgid "records are not fixed-width; this probably is not a MSC archive file"
+msgstr ""
+
+msgid "MLY archive format not supported at this time.\n(Note: you can easily obtain DLY data and re-create the equivalent.)"
+msgstr ""
+
+msgid "FIF archive format not supported at this time"
+msgstr ""
+
+msgid "Format not recognized as either HLY, DLY, MLY, or FIF archive formats\nTry forcing using the 'format' option."
+msgstr ""
+
+msgid "Format is %s with %i records from %i station%s,\nread in %.1f seconds"
+msgstr ""
+
+msgid ","
+msgstr ","
+
+msgid "%8s: %7i records"
+msgstr ""
+
+msgid "in %4i"
+msgstr "dans %4i"
+
+msgid "between %4i and %4i"
+msgstr "entre %4i et %4i"
+
+msgid "%s does not have either %s or %s parameters, or both"
+msgstr ""
+
+msgid "using only %s"
+msgstr ""
+
+msgid "not enough data to determine annual total precipitation"
+msgstr ""
+
+msgid "changing %s from %s to %s"
+msgstr ""
+
+msgid "can not converge; outside quantile bounds [0,1]"
+msgstr ""
+
+msgid "no convergence of quantile; %f > 0.0001"
+msgstr ""
+
+msgid "no sum parameters were found in %s"
+msgstr ""
+
+msgid "specify using %s parameter"
+msgstr ""
+
+msgid "using %s"
+msgstr ""
+
+msgid        "%i element found: %s"
+msgid_plural "%i elements found: %s"
+msgstr[0]    "%i élément trouvé: %s"
+msgstr[1]    "%i éléments ont trouvé: %s"

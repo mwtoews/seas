@@ -1,0 +1,138 @@
+This is a summary of changes to the 'seas' package for R.
+Please submit any suggestions, additions, or errors to:
+	Mike Toews <mwtoews@gmail.com>
+Version 0.3-9
+2010-05-07
+ - update documentation and examples for R 2.11
+
+Version 0.3-8
+2007-10-01
+ - fix bug with write.help for Visual HELP precipitation file
+ - fix partial matching errors in 'dathomog', identified by BDR
+ - other documentation fixes identified using 2.7.0 devel series
+
+Version 0.3-7
+2007-08-04
+ - change email, since older SFU account will expire eventually
+ - using original items for 'par("yaxt")' in 'plot.seas.var'
+ - fixed bug in 'write.help.R'
+
+Version 0.3-6
+2007-06-07
+ - added an 'ann' option in 'seas.label' for 'image.seas.sum'
+ - modified 'conv365toGregorian' to copy attributes from 'x' into ouput
+ - fixed precipitation unit in 'plot.year'
+ - 'seas.df.check' now looks for 'start.day'
+ - 'write.help' now calculates 'year' to 'dat'
+ - updated citation; paper now published
+
+Version 0.3-5
+2007-04-22
+ - rewrote 'write.help' to use C-code for speed, also have load/unload
+    functions for the dynamic library
+ - added 'conv365toGregorian' function
+ - rearranged functions that used a 'year.length' attribute or parameter
+    to instead use a 'calendar' attribute or parameter
+ - added 'year.length' function to determine the number of days per year
+ - modified the behaviour of 'mksub' a bit, so it doesn't strip attributes
+    from arrays used in data frames; instead certain attributes are not
+    transfered
+ - casting integers for 'sprintf' calls for significant speed gains, in
+    particular in 'read.lars'
+ - simplified 'change' by removing the first 'var' parameter
+
+Version 0.3-4
+2007-04-02
+ - fixed minor error with named attributes for R 2.5.0
+ - fixed error in 'plot.seas.temp' when 't_mean' is missing
+ - 'read.sdsm' now considers units
+ - 'read.lars' rewritten - now reads 'st' file for meta-data, then reads
+    'sr/dat' file from the meta-data in 'st'
+ - added doi from Elsevier to paper/package 'citation("seas")'
+ - brought back 'ylog' parameter to 'plot.seas.var', now does
+    log-transformed boxplots, and can be used with 'add.alt=TRUE'
+ - removed 'yaxs="i"' from a few functions; these can be set normally
+    through 'par', if desired
+ - allowed 'par("ylog")' to work with 'plot.seas.sum'
+
+Version 0.3-3
+2007-02-26
+ - Modified 'read.sdsm' to adapt to year.length=360 better, added attr too
+ - fixed documentation for 'mkseas' usage
+ - fixed handling of '.seasylab' in 'hidden.R[d]'; using 'var', not 'orig'
+ - 'change' now stores 'p.cut' attributes
+ - 'interarrival' now stores 'p.cut' and 'inv' attributes
+ - fixed problem with character encoding in 'mscdata'
+ 
+Version 0.3-2
+2006-11-08
+ - several fixes from 0.3-1
+ - 'plot.seas.norm' no longer re-sets the options, and now 'leg' can
+   use c(x,y) to place legend
+ - fixed par(ylog=TRUE) for 'plot.seas.var'
+ - fixed 'mscdata' example
+ - fix in 'mkseas' with proper order of 'days' (or 'bin.lengths')
+ - re-added 'ylab' into a few plotting functions
+ - fixed 'mksub' error if data.frame element is 'array'
+ - made axises for most plotting functions to respect par('lwd')
+ - new option 'seas.bxp' for boxplot fill colour and outlier size
+
+Version 0.3-1
+2006-10-25
+ - lots of changes in this release: some functions added, or renamed
+ - moved 'mkfact' to 'mkseas', and it is more flexible, and can start
+   on different dates, such as 'Aug 1'
+ - added 'mkann' to complement 'mkseas', which finds the annual breaks
+   between seasons; this is simple if 'start.day' is January 1st, but
+   seasons don't need to star here anymore
+ - more use of 'attr' to pass meta-data between objects; such as 'units'
+   and 'long.name' for variables in data frames
+ - 'mscdata' and 'read.msc' now uses attributes for storing long names
+   and units for each variable
+ - data must be subdivided by 'mksub', as the plotting functions have
+   changed or removed 'start', 'end', and 'id'
+ - 'mksub's 'start' and 'end' parameters now either accept an integer
+   year or a 'Date' class
+ - plotting functions now use 'start' to designate a starting bin, and
+   'rep' to repeat some bins 
+ - the grid from '.seasmonthgrid' is more exact to the actual month
+   boundaries
+
+Version 0.2-1
+2006-04-05
+ - removed 'degday' and 'growday' since they were not needed
+ - fixed 'plot.seas.norm' for plotting non-precipitation items
+ - renamed 'param*' to 'var*' and 'parameter*' to 'variable*' (where
+      appropriate); this is to reduce confusion between the two names,
+      however it may lead to further confusion with the 'var' function
+ - increased contrast in grey-scale theme
+ - moved the null theme in 'hidden.R' from 3 to 0
+ - added 'read.sdsm' and 'write.sdsm' functions
+ - added 'plot' method for 'seas.sum' objects, which shows boxplots
+ - submitted article for 'seas' package to 'Computers & Geosciences'
+
+Version 0.1-3
+2006-03-14
+ - added .seascol and changed hplot functions to accommodate modular
+	colouring styles
+ - re-tabbed everything in Emacs
+ - renamed package from 'climate.plot' to 'seas'
+ - made 'mkfact' a bit more flexible, looks for Date/POSIXct classes
+ - made '.seasmonthgrid' in hidden.R
+ - added new style to accommodate no title
+ - restructured 'seas.sum' object:
+   - 'days', 'na' are separate 2D arrays (used to be part of 'seas')
+   - 'active' is 3D, and only present if 'a.cut' is non-zero or FALSE
+ - fixed a few bugs in 'seas.norm'; added '...' to 'precip.norm'
+
+Version 0.1-2
+2006-02-13
+ - added 'ZipData: no' for Windows packaging of non-R data
+
+Version 0.1.1
+2006-02-11
+ - removed Unicode for 'mkfact' in-order to work for R CMD check on C locale
+
+Version	0.1
+2006-02-10
+ - first personal version, and submitted to CRAN

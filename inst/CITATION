@@ -1,9 +1,8 @@
 citHeader("To cite package seas in publications use:")
 
-# in review
 citEntry(entry="article",
         title = "Seasonal statistics: the 'seas' package for R",
-        author = personList(person("Michael","Toews","W.","mwtoews@sfu.ca"),
+        author = personList(person("Michael","Toews","W.","mwtoews@gmail.com"),
 	         person("Paul","Whitfield","H.","paul.whitfield@ec.gc.ca"),
                  person("Diana","Allen","M.","dallen@sfu.ca")),
         journal = "Computers \\& Geosciences",

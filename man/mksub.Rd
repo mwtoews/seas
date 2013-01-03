@@ -36,7 +36,7 @@
   and attributes as \code{x}, except \code{id}, which will be retained
   as an attribute (e.g., \code{attr(x,"id")}).
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{read.msc}}, \code{\link{mscdata}}}
 \examples{
 data(mscstn)

@@ -11,7 +11,7 @@
 \synopsis{
 seas.norm(x, var, fun = "median", norm = "days", year.filter,
           ann.only = FALSE, precip.norm = FALSE)
-precip.norm(x, fun="median", norm = "days", year.filter)
+precip.norm(x, fun = "median", norm = "days", year.filter)
 }
 \usage{
 # minimum
@@ -23,7 +23,7 @@ precip.norm(x)
 seas.norm(x, var, fun = "median", norm = "days", year.filter,
           ann.only = FALSE, precip.norm = FALSE)
 
-precip.norm(x, fun="median", norm = "days", year.filter)
+precip.norm(x, fun = "median", norm = "days", year.filter)
 }
 \arguments{
   \item{x}{\code{\link{seas.sum}} object}
@@ -61,9 +61,9 @@ precip.norm(x, fun="median", norm = "days", year.filter)
   but it can also be a built in \R function, such as \code{"\link{var}"}
   for variance, or a composite such as:
   \tabular{ll}{
-    \code{function(i,na.rm)(quantile(i,.2,na.rm=na.rm,names=F))} \tab
+    \code{function(i, na.rm)(quantile(i, 0.2, na.rm=na.rm, names=F))} \tab
     the 20\% quantile \cr
-    \code{function(i,na.rm)(mean(i,na.rm=na.rm)/(sd(i,na.rm=na.rm)^3))} \tab skewness
+    \code{function(i, na.rm)(mean(i, na.rm=na.rm) / (sd(i, na.rm=na.rm)^3))} \tab skewness
   }
   
   If \code{fun = "\link{mean}"}, then the statistics are
@@ -148,12 +148,13 @@ precip.norm(x, fun="median", norm = "days", year.filter)
   Guttman, N.B. 1989, \sQuote{Statistical descriptors of climate},
   \emph{American Meteorological Society}, \bold{70}, 602--607.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \note{
   Seasonal data are explicitly normalized to a rate \emph{per day}
   (i.e., mm/day), and not \emph{per month} (i.e., mm/month). This is
   because a time-derivative \emph{per month} has unequal intervals of
-  time, ranging between 28 to 31 days. This directly creates up to 10\% error in the analysis between months.
+  time, ranging between 28 to 31 days. This directly creates up to 10\%
+  error in the analysis between months.
   
   Units for annual normals, however, remain \emph{per year}, since a
   year is a suitable time derivative.
@@ -164,9 +165,9 @@ precip.norm(x, fun="median", norm = "days", year.filter)
 data(mscdata)
 
 # calculate precipitation normal
-dat <- mksub(mscdata,id=1108447)
+dat <- mksub(mscdata, id=1108447)
 dat.ss <- seas.sum(dat)
-dat.nm <- precip.norm(dat.ss,fun="mean")
+dat.nm <- precip.norm(dat.ss, fun="mean")
 
 # plot precipitation normal
 plot(dat.nm) # this is the same as plot.precip.norm(dat.nm)

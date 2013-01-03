@@ -27,7 +27,7 @@ setSeasOpts()
   environment, and returns nothing.
 
   This is automatically done when \pkg{seas} is loaded (using
-  \code{\link{.First.lib}}).
+  \code{\link{.onLoad}}).
 }
 \section{Options used in seas}{
   Here are all the supported options for \pkg{seas}, with the default
@@ -169,7 +169,7 @@ setSeasOpts()
     }
   }
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{hidden}}}
 \examples{
 if(is.null(getOption("seas.main")))

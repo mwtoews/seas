@@ -20,7 +20,7 @@ getstnname(id)
 \value{
   Returns the station name(s). If the ID does not exist, returns \code{NULL}.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{mscstn}}, \code{\link{mscdata}}, \code{\link{.seastitle}}}
 \examples{
 data(mscdata)
@@ -29,6 +29,6 @@ mscdata$id[1]
 getstnname(mscdata$id[1])
 
 ids <- levels(mscdata$id)
-data.frame(id=I(ids),name=getstnname(ids))
+data.frame(id=I(ids), name=getstnname(ids))
 }
 \keyword{utilities}

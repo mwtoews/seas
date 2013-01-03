@@ -62,7 +62,7 @@ seas.sum.check(x, orig, var, norm, year.filter, ann.only)
   \code{seas.sum.check} returns \code{x} with modifications, depending
   on \code{norm} and \code{year.filter}.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{hidden}} functions for \pkg{seas}}
 \examples{
 data(mscdata)
@@ -70,6 +70,6 @@ dat <- mksub(mscdata, id=1108447)
 str(seas.df.check(dat))
 
 dat.ss <- seas.sum(dat)
-str(seas.sum.check(dat.ss,norm="days"))
+str(seas.sum.check(dat.ss, norm="days"))
 }
 \keyword{utilities}

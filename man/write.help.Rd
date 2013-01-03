@@ -28,8 +28,8 @@ write.help(file, dat, var="", name="", region, lat,
     formated for the DOS HELP versions (default)}
   \item{metric}{\link{logical} if using metric units (this only sets a
     flag, please ensure the data are in either \enc{°}{degrees }C,
-    mm/day and \eqn{\mbox{MJ}/(\mbox{m}^2 \cdot \mbox{day})}{MJ/(m^2*day)} or \enc{°}{degrees }F, in./day and
-    langleys/day)}
+    mm/day and \eqn{\mbox{MJ}/(\mbox{m}^2 \cdot \mbox{day})}{MJ/(m^2*day)}
+    or \enc{°}{degrees }F, in./day and langleys/day)}
 }
 \details{
   This utility function is experimental and has not been extensively
@@ -40,7 +40,7 @@ write.help(file, dat, var="", name="", region, lat,
   Data imported from SDSM use a 365-day calendar, and can be
   approximated using \code{\link{conv365toGregorian}}.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{
   HELP 3.07 - Original version for the US EPA; free download \cr
   \url{http://el.erdc.usace.army.mil/products.cfm?Topic=model&Type=landfill}
@@ -51,7 +51,7 @@ write.help(file, dat, var="", name="", region, lat,
 	
   Visual HELP - Uses a similar underlying code as HELP 3.07, but
   features a Windows GUI \cr
-  \url{http://www.waterloohydrogeologic.com/software/visual_help/visual_help_ov.htm}
+  \url{http://www.swstechnology.com/groundwater-software/unsaturated-zone-modeling/visual-help}
 }
 \seealso{\code{\link{read.msc}}, \code{\link{read.sdsm}},
   \code{\link{read.lars}}, \code{\link{conv365toGregorian}}}

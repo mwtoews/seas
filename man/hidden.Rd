@@ -10,8 +10,8 @@
   graphs. Also, draw the month grid.
 }
 \usage{
-.seasxlab(width,start.day)
-.seasylab(var,long.name=NULL,units=NULL)
+.seasxlab(width, start.day)
+.seasylab(var, long.name=NULL, units=NULL)
 .seastitle(main=NULL, id=NULL, name=NULL,
            orig=NULL, fun=NULL, range=NA)
 .seasmonthgrid(width, days, start=1, rep=0, start.day=1, month.label)
@@ -31,7 +31,7 @@
     \code{\link{getstnname}}}
   \item{name}{a name, which is used for labels}
   \item{fun}{function, if applicable}
-  \item{range}{year range; \code{c(start.year,end.year)}}
+  \item{range}{year range; \code{c(start.year, end.year)}}
   \item{days}{also known as \code{bin.lengths}, which represents the
     maximum number of days expected in each bin for a complete annum}
   \item{start}{the starting bin number}
@@ -56,21 +56,21 @@
   .seasxlab, .seasylab and .seastitle return a \code{character} label
   intended for plots.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{getstnname}}, \code{\link{SeasOpts}}}
 \examples{
 setSeasOpts()
 
-.seasxlab(11,1)
-.seasxlab("mon",1)
+.seasxlab(11, 1)
+.seasxlab("mon", 1)
 
 # Not starting on January 1st
-.seasxlab(11,120)
+.seasxlab(11, 120)
 
 # Labelled according to month (and possibly day)
 getOption("seas.label")$month
-.seasxlab("mon",as.Date("2000-08-01"))
+.seasxlab("mon", as.Date("2000-08-01"))
 getOption("seas.label")$monthday
-.seasxlab(365/20,as.Date("2000-08-15"))
+.seasxlab(365/20, as.Date("2000-08-15"))
 }
 \keyword{utilities}

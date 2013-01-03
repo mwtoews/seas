@@ -1,6 +1,16 @@
 This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
+
+Version 0.4-0
+2013-01-04
+ - update code-base for R 2.14.0
+ - improve syntax structure
+ - move non-R data to inst/extdata
+ - create a NAMESPACE file
+ - use .onLoad and useDynLib instead of .First.lib
+ - update documented URLs, where possible
+
 Version 0.3-9
 2010-05-07
  - update documentation and examples for R 2.11
@@ -13,14 +23,14 @@ Version 0.3-8
 
 Version 0.3-7
 2007-08-04
- - change email, since older SFU account will expire eventually
+ - update to new email address
  - using original items for 'par("yaxt")' in 'plot.seas.var'
  - fixed bug in 'write.help.R'
 
 Version 0.3-6
 2007-06-07
  - added an 'ann' option in 'seas.label' for 'image.seas.sum'
- - modified 'conv365toGregorian' to copy attributes from 'x' into ouput
+ - modified 'conv365toGregorian' to copy attributes from 'x' into output
  - fixed precipitation unit in 'plot.year'
  - 'seas.df.check' now looks for 'start.day'
  - 'write.help' now calculates 'year' to 'dat'

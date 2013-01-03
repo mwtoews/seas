@@ -1,10 +1,10 @@
 mscdata <- local({
 	load("mscdata.rda")
-	if(capabilities("iconv")) {
+	if (capabilities("iconv")) {
 		deg <- "\xb0C"
 		deg <- iconv(deg, "latin1", "")
 		if(is.na(deg)) deg <- "degC"
-	}else{
+	} else {
 		deg <- "degC"
 	}
 	attr(mscdata$t_max, "units") <- deg

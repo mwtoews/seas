@@ -7,7 +7,7 @@
 }
 \usage{
 \method{image}{seas.sum}(x, var, norm = "days", start=1, rep=0, zlim, alim,
-    palette = colorRampPalette(c("white","blue"))(64),
+    palette = colorRampPalette(c("white", "blue"))(64),
     year.filter, power, contour=TRUE, show.median,
     main, \ldots)
 }
@@ -28,7 +28,7 @@
     \code{c(min,max)} range with a defined minimum}
   \item{alim}{if \code{show.median}, this is the range for the annual
     sums; this can either be a singe number for the maximum (minimum set
-    to zero, or a \code{c(min,max)} range with a defined minimum}
+    to zero, or a \code{c(min, max)} range with a defined minimum}
   \item{palette}{colours for \code{\link{image}}; the use of
     \code{\link{colorRampPalette}} is recommended}
   \item{year.filter}{specifies the annual seasons to display}
@@ -61,7 +61,7 @@
   the quantile is equal to the median of the annual amount. This
   numerical solution is found using \code{\link{seas.norm}}.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{
   \code{\link{seas.sum}}, \code{\link{seas.norm}}
 
@@ -73,24 +73,24 @@ dat <- mksub(mscdata, id=1108447)
 dat.ss <- seas.sum(dat, width="mon")
 image(dat.ss)
 
-image(dat.ss,contour=FALSE)
+image(dat.ss, contour=FALSE)
 
-image(dat.ss,norm="active",start=6,rep=5)
+image(dat.ss, norm="active", start=6, rep=5)
 
 # different start day (not Jan 1st)
-dat2.ss <- seas.sum(dat,start.day=as.Date("2001-08-01"))
+dat2.ss <- seas.sum(dat, start.day=as.Date("2001-08-01"))
 image(dat2.ss)
-image(dat2.ss,power=2)
-image(dat2.ss,palette=rainbow(64),main=NA) # no title
-image(dat2.ss,palette=colorRampPalette(c("white","darkgreen"))(16))
-image(dat2.ss,"snow")
-image(dat2.ss,"snow",power=0.5)
+image(dat2.ss, power=2)
+image(dat2.ss, palette=rainbow(64), main=NA)  # no title
+image(dat2.ss, palette=colorRampPalette(c("white", "darkgreen"))(16))
+image(dat2.ss, "snow")
+image(dat2.ss, "snow", power=0.5)
 
 # growing degree days for 10 degC
 dat$gdd10 <- dat$t_mean - 10
-dat$gdd10[dat$gdd10<0] <- 0
+dat$gdd10[dat$gdd10 < 0] <- 0
 attr(dat$gdd10,"long.name") <- "growing degree days"
-dat3.ss <- seas.sum(dat,var="gdd10")
-image(dat3.ss,"gdd10",palette=colorRampPalette(c("white","red"))(64))
+dat3.ss <- seas.sum(dat, var="gdd10")
+image(dat3.ss, "gdd10", palette=colorRampPalette(c("white", "red"))(64))
 }
 \keyword{hplot}

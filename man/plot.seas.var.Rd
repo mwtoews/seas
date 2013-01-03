@@ -32,7 +32,7 @@ plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
     day of the year for the fist bin, or it can be a \code{Date} to
     specify a month and day (year is ignored)}
   \item{col}{colour for the boxplots; the default is \code{"lightgrey"}}
-  \item{ylim}{\code{c(min,max)} range for y-axis}
+  \item{ylim}{\code{c(min, max)} range for y-axis}
   \item{add.alt}{this adds an alternative axis, and is specified by
     \code{c(slope,inter)}; for example, if the primary measure is in
     \enc{°}{degrees }C, a secondary scale in K would be
@@ -57,7 +57,7 @@ plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
 \value{
   Returns values from \code{\link{boxplot}} statistics on the variable.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{
   \code{\link{plot.seas.norm}}, \code{\link{plot.year}}.
 
@@ -67,20 +67,20 @@ plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
 opar <- par(no.readonly=FALSE)
 on.exit(par(opar))
 data(mscdata)
-dat <- mksub(mscdata,id=1108447)
+dat <- mksub(mscdata, id=1108447)
 
 plot.seas.var(dat, var="t_max", col="tomato",
-  add.alt=c(5/9,32), alt.ylab="F")
+  add.alt=c(5/9, 32), alt.ylab="F")
 abline(h=0)
 
 par(opar) # reset graphics parameters
 
 plot.seas.var(dat, var="t_min",
-  start=18,rep=16)
+  start=18, rep=16)
 
-pdat <- dat[dat$precip>0,]
-attr(pdat$precip,"long.name") <- "precipitation intensity"
-attr(pdat$precip,"units") <- "mm/day"
+pdat <- dat[dat$precip > 0,]
+attr(pdat$precip, "long.name") <- "precipitation intensity"
+attr(pdat$precip, "units") <- "mm/day"
 
 par(ylog=TRUE)
 plot.seas.var(pdat, var="precip", col="azure")

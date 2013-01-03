@@ -25,5 +25,5 @@
 }
 \seealso{\code{\link{read.lars}}, which contains an example using
   these files}
-\author{M.W. Toews}
+\author{Mike Toews}
 \keyword{datasets}

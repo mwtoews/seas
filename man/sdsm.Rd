@@ -45,7 +45,7 @@ write.sdsm(dat, var)
   If a \code{calendar} is specified, this is stored as an attribute in
   the \code{date} data frame column.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{
   Wilby, R.L., Dawson, C.W. and Barrow, E.M. 2002,
   \sQuote{SDSM - a decision support tool for the assessment of regional
@@ -53,7 +53,7 @@ write.sdsm(dat, var)
   \bold{77}, 473--471.
   
   SDSM can be downloaded free-of-charge for Windows platforms from \cr
-  \url{http://www-staff.lboro.ac.uk/~cocwd/SDSM/}
+  \url{http://co-public.lboro.ac.uk/cocwd/SDSM/}
   
   CGCM1 and HADCM3 model data for SDSM can be downloaded from the
   Canadian Climate Impacts and Scenarios website: \cr
@@ -64,16 +64,16 @@ write.sdsm(dat, var)
 \dontrun{
 # reading
 gf50 <- read.sdsm("GF_2050s_precip.OUT")
-gf50.ss <- seas.sum(gf50,var=paste("V",1:20,sep=""),name="Grand Forks")
+gf50.ss <- seas.sum(gf50, var=paste("V", 1:20, sep=""), name="Grand Forks")
 # analysis
-image(gf50.ss,var="V1")
-image(gf50.ss,var="V2")
-image(gf50.ss,var="V3")
+image(gf50.ss, var="V1")
+image(gf50.ss, var="V2")
+image(gf50.ss, var="V3")
 
 # writing
 data(mscdata)
-hj <- mksub(mscdata,id=2100630)
-write.sdsm(hj,"precip",1961,2000,"HJ_Obs_prcp.DAT")
+hj <- mksub(mscdata, id=2100630)
+write.sdsm(hj, "precip", 1961, 2000, "HJ_Obs_prcp.DAT")
 }
 }
 \keyword{file}

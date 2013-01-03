@@ -13,9 +13,9 @@
 }
 \synopsis{
 read.lars(stfile, year.offset=0)
-write.lars(x,stfile,datfile,site,lat,lon,alt)
+write.lars(x, stfile, datfile, site, lat, lon, alt)
 
-lars2help(infile,outfile, year.offset, site)
+lars2help(infile, outfile, year.offset, site)
 write.lars.scenario(file, x1, x2, name="anomaly")
 }
 \usage{
@@ -23,7 +23,7 @@ write.lars.scenario(file, x1, x2, name="anomaly")
 read.lars(stfile, year.offset=0)
 
 # write observed climate data (*.st and/or *.sr)
-write.lars(x,stfile,datfile,site,lat,lon,alt)
+write.lars(x, stfile, datfile, site, lat, lon, alt)
 
 # experimental functions (may not work great; or at all!)
 lars2help(infile, outfile, year.offset, site)
@@ -102,7 +102,7 @@ write.lars.scenario(file, x1, x2, name="anomaly")
   functions to translate data between LARS and HELP (see
   \code{\link{write.help}} for more info).
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{
   LARS-WG was can be downloaded for academic and research uses from \cr
   \url{http://www.rothamsted.bbsrc.ac.uk/mas-models/larswg.php}
@@ -110,24 +110,24 @@ write.lars.scenario(file, x1, x2, name="anomaly")
   Semenov, M.A. and Barrow, E.M. (1997) \dQuote{Use of a stochastic
     weather generator in the development of climate change
     scenarios}. \emph{Climate Change}: \bold{35}, 397--414.
-  doi: 10.1023/A:1005342632279
+    doi: 10.1023/A:1005342632279
 }
 \seealso{\code{\link{write.help}}, \code{\link{read.sdsm}},
   \code{\link{summerland}} example synthetic data,
   \code{\link{conv365toGregorian}}}
 \examples{
-stfile <- system.file("data/summerland.st",package="seas")
+stfile <- system.file("extdata", "summerland.st", package="seas")
 print(stfile)
-summ <- read.lars(stfile,year.offset=1960)
+summ <- read.lars(stfile, year.offset=1960)
 head(summ)
 str(summ)
 
 # plot temperature
-summ$t_mean <- rowMeans(summ[,c("t_min","t_max")])
+summ$t_mean <- rowMeans(summ[, c("t_min", "t_max")])
 plot.seas.temp(summ)
 
 # plot solar radiation
-plot.seas.var(summ,"solar")
+plot.seas.var(summ, "solar")
 
 # plot precipitation
 summ.ss <- seas.sum(summ)

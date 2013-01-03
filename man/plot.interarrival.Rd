@@ -7,7 +7,7 @@
   throughout the season. The mean value is also drawn as a single line.
 }
 \usage{
-\method{plot}{interarrival}(x, width = 11, start=1, rep=0, start.day=1,
+\method{plot}{interarrival}(x, width=11, start=1, rep=0, start.day=1,
            ylog=FALSE, maxy, main, \ldots)
 }
 \arguments{
@@ -22,17 +22,17 @@
     specify a month and day (year is ignored)}
   \item{ylog}{\code{logical}; y-axis is logarithmic}
   \item{maxy}{maximum number of days for the y-axis; it can either be
-    passed as \code{c(wet,dry)}, or as a single value for both}
+    passed as \code{c(wet, dry)}, or as a single value for both}
   \item{main}{main title for plot, otherwise other title will be
     automatically generated}
   \item{\ldots}{ignored}
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{interarrival}}, \code{\link{plot.seas.var}}}
 \examples{
 data(mscdata)
 
-dat.int <- interarrival(mksub(mscdata,id=1108447))
+dat.int <- interarrival(mksub(mscdata, id=1108447))
 plot(dat.int, width="mon")
 
 plot(dat.int, ylog=FALSE, maxy=35, rep=10)

@@ -79,20 +79,20 @@
 }
 \seealso{\code{\link{read.msc}}}
 \references{
-  \url{http://climate.weatheroffice.ec.gc.ca/prods_servs/documentation_index_e.html} MSC archive format description
+  \url{http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
 
-  \url{http://www.climate.weatheroffice.ec.gc.ca/prods_servs/cdcd_iso_e.html} CDCD CD-ROM download location
+  \url{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} CDCD CD-ROM download location
 
   \url{http://dosbox.sourceforge.net} for emulating DOS on non-Microsoft
   platforms
 
   \url{http://www.intevation.de/~bernhard/archiv/uwm/canadian_climate_cdformat/} an alternative method of extracting data from the CDCD CD-ROMs using a Python module by Bernhard Reiter
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \examples{
-file <- system.file("data/A1128551.DLY",package="seas")
-print(file)
-dat <- read.msc(file)
+fname <- system.file("extdata", "A1128551.DLY", package="seas")
+print(fname)
+dat <- read.msc(fname)
 head(dat)
 str(dat)
 

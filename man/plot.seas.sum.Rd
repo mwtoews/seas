@@ -7,7 +7,7 @@
 }
 \usage{
 \method{plot}{seas.sum}(x, var, norm="days", year.filter, ylim,
-    start=1, rep=0, col = "lightgrey", main, ylab, \ldots)
+    start=1, rep=0, col="lightgrey", main, ylab, \ldots)
 }
 \arguments{
   \item{x}{a \code{seas.sum} object created by \code{\link{seas.sum}}}
@@ -17,8 +17,8 @@
     active); it may also be a \code{matrix} with the same dimensions as
     \code{x$days}}
   \item{year.filter}{use only these years for analysis}
-  \item{ylim}{either a single value for \code{c(0,ylim)}, or a range of
-    \code{c(min,max)} for the y-axis limits}
+  \item{ylim}{either a single value for \code{c(0, ylim)}, or a range of
+    \code{c(min, max)} for the y-axis limits}
   \item{start}{starting bin at left-hand side of plot}
   \item{rep}{repeat bins on right-hand side of plot}
   \item{col}{colour for boxplot, default is \code{"lightgrey"}}
@@ -43,7 +43,7 @@
 
   For instance, the median will appear to decrease as \code{width} decreases.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{seas.sum}}, \code{\link{image.seas.sum}}, \code{\link{seas.norm}}}
 \examples{
 data(mscdata)
@@ -57,14 +57,14 @@ dat.ss <- seas.sum(dat)
 plot(dat.ss)
 
 # Normalized by the number of active days in each bin
-plot(dat.ss,norm="active")
+plot(dat.ss, norm="active")
 
 # Snow, using a different start day, and a better y-axis:
-dat2.ss <- seas.sum(dat,var="snow",width="mon",
+dat2.ss <- seas.sum(dat, var="snow", width="mon",
                     start.day=as.Date("2000-08-01"))
 par(yaxs="i")
-plot(dat2.ss,var="snow")
-plot(dat2.ss,var="snow",norm="active")
+plot(dat2.ss, var="snow")
+plot(dat2.ss, var="snow", norm="active")
 
 }
 \keyword{hplot}

@@ -48,7 +48,7 @@ interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
   The table has \code{id} and \code{name} \link{attributes} (if
   available from \code{x}).
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{
   von Storch, H. and Zwiers, F.W., 1999, \emph{Statistical analysis in
     climate research}, Cambridge: Cambridge University Press, 484 p.
@@ -57,7 +57,7 @@ interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
 \examples{
 data(mscdata)
 
-van.int <- interarrival(mksub(mscdata,id=1108447))
+van.int <- interarrival(mksub(mscdata, id=1108447))
 summary(van.int)
 van.int[which.max(van.int$dry),]
 van.int[which.max(van.int$wet),]

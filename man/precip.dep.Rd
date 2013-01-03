@@ -26,7 +26,7 @@ precip.dep(x, norm, var="precip")
   Returns a \code{data.frame} similar to \code{x}, but contains the
   departures in the \code{dep} column.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \note{
   The selection of \code{fun} in \code{\link{precip.norm}}, such as
   using \code{\link{mean}} or \code{\link{median}}, will affect
@@ -42,10 +42,10 @@ data(mscdata)
 
 dat <- mksub(mscdata, id=1108447)
 dat.ss <- seas.sum(dat)
-dat.dep <- precip.dep(dat,precip.norm(dat.ss,fun="mean"))
+dat.dep <- precip.dep(dat,precip.norm(dat.ss, fun="mean"))
 plot(dep ~ date, dat.dep, type="l", main="CPD from mean normals")
 
-dat.dep <- precip.dep(dat, precip.norm(dat.ss,fun="median"))
+dat.dep <- precip.dep(dat, precip.norm(dat.ss, fun="median"))
 plot(dep ~ date, dat.dep, type="l", main="CPD from median normals")
 }
 \keyword{manip}

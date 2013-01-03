@@ -21,6 +21,6 @@ conv365toGregorian(x)
 \value{
   Returns a \code{\link{data.frame}} with Gregorian calendar dates.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \keyword{utilities}
 \keyword{datagen}

@@ -25,22 +25,21 @@ year.length(x, calendar)
     \item \code{"julian"}: 366 days on years divisible by 4, otherwise
     365 days
   }
-  
 }
 \value{
   Returns a vector the same length as \code{x} with the numbers of days
   corresponding to each year.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{\url{http://www.cgd.ucar.edu/cmw/eaton/cf-metadata/CF-current.html#cal}}
 \seealso{\code{\link{mkseas}}, \code{\link{mkann}}}
 \examples{
-cal <- data.frame(year=c(1899,1900,1904,2000,2080,2100))
+cal <- data.frame(year=c(1899, 1900, 1904, 2000, 2080, 2100))
 cal[["Gregorian"]] <- year.length(cal$year)
-cal[["Julian"]] <- year.length(cal$year,"julian")
-cal[["360_day"]] <- year.length(cal$year,"360_day")
-cal[["365_day"]] <- year.length(cal$year,"365_day")
-cal[["366_day"]] <- year.length(cal$year,"366_day")
+cal[["Julian"]] <- year.length(cal$year, "julian")
+cal[["360_day"]] <- year.length(cal$year, "360_day")
+cal[["365_day"]] <- year.length(cal$year, "365_day")
+cal[["366_day"]] <- year.length(cal$year, "366_day")
 
 cal
 }

@@ -47,13 +47,14 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   fields:
   
   \describe{
-    \item{\code{id}:}{\code{\link{factor}} used to distinguish multiple stations
-      within a single data frame}
+    \item{\code{id}:}{\code{\link{factor}} used to distinguish multiple
+      stations within a single data frame}
     \item{\code{year}:}{\code{\link{integer}} year}
     \item{\code{yday}:}{\code{integer} day of year; 1--365 or 1--366}
-    \item{\code{date}:}{\code{\link{Date}}, useful for plotting a continuous time-series}
-    \item{\code{datetime}:}{\code{\link{POSIXct}}, includes date and time info,
-      only included if \code{file} is in HLY archive format}
+    \item{\code{date}:}{\code{\link{Date}}, useful for plotting a continuous
+      time-series}
+    \item{\code{datetime}:}{\code{\link{POSIXct}}, includes date and time
+      info, only included if \code{file} is in HLY archive format}
     \item{\code{element}:}{\code{\link{numeric}}, with
       \code{\link{attributes}} set for \code{units} and
       \code{long.name}; these can be changed using \code{\link{attr}} on
@@ -80,14 +81,14 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
 
   Additional elements (or variables) can be added by specifying the
   \code{element} variable, and their units can be set using, for
-  example, \code{attr(dat$var,"units") <- "cm"}.
+  example, \code{attr(dat$var, "units") <- "cm"}.
   
   Units are in common metric units: \sQuote{mm} for precipitation-related
   measurements, \sQuote{cm} for snow depth, and
   \sQuote{\enc{°}{degrees }C} for temperature. The \code{flag} columns are
   a single character \code{\link{factor}}, described in the \acronym{MSC}
   Archive documentation. Units are added to each column using, for example
-  \code{attr(dat$precip),"units") <- "mm"}. In addition
+  \code{attr(dat$precip), "units") <- "mm"}. In addition
 }
 \source{
   Climate data can be requested from \acronym{MSC}, or can be obtained
@@ -95,57 +96,48 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   CD-ROMs, which are available for a free download (procedure described
   in \code{\link{A1128551.DLY}}).
 }
-\note{
-  This function is not optimized, since it uses many \code{\link{for}}
-  loops.  It would be nice to have this function operate faster, however
-  this is not priority for me right now. If any one is interested in
-  optimizing this function (by writing the second half in C or FORTRAN),
-  please contact me, and I will supply you with example archive files.
-}
-\author{M.W. Toews}
+\author{Mike Toews}
 \references{
-  \url{http://climate.weatheroffice.ec.gc.ca/prods_servs/documentation_index_e.html} documentation for the MSC digital archive formats
-  
-  \url{http://www.climate.weatheroffice.ec.gc.ca/prods_servs/cdcd_iso_e.html}
-  download \acronym{ISO} file images of the CD-ROMs with DLY data
+  \url{http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
+
+  \url{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} CDCD CD-ROM download location
 }
 \seealso{\code{\link{mscstn}}, \code{\link{mksub}}, \code{\link{mkseas}},
     \code{\link{A1128551.DLY}}}
 \examples{
-file <- system.file("data/A1128551.DLY",package="seas")
-print(file)
-dat <- read.msc(file)
+fname <- system.file("extdata", "A1128551.DLY", package="seas")
+print(fname)
+dat <- read.msc(fname)
 print(head(dat))
 
 plot.seas.temp(dat)
 plot.year(dat)
 
 # Show how to convert from daily to monthly data
-dat$yearmonth <- factor(paste(format(dat$date,"\%Y-\%m"),15,sep="-"))
+dat$yearmonth <- factor(paste(format(dat$date, "\%Y-\%m"), 15, sep="-"))
 mlydat <- data.frame(date=as.Date(levels(dat$yearmonth)))
-mlydat$year <- factor(format(mlydat$date,"\%Y"))
-mlydat$month <- mkseas(mlydat,"mon")
+mlydat$year <- factor(format(mlydat$date, "\%Y"))
+mlydat$month <- mkseas(mlydat, "mon")
 
 # means for temperature data
-mlydat$t_max <- as.numeric(tapply(dat$t_max, dat$yearmonth,
-                                  mean,na.rm=TRUE))
-mlydat$t_min <- as.numeric(tapply(dat$t_min, dat$yearmonth,
-                                  mean,na.rm=TRUE))
-mlydat$t_mean <- as.numeric(tapply(dat$t_mean, dat$yearmonth,
-                                   mean,na.rm=TRUE))
-# sums for precipitation-related data
+mlydat$t_max <- as.numeric(
+    tapply(dat$t_max, dat$yearmonth, mean, na.rm=TRUE))
+mlydat$t_min <- as.numeric(
+    tapply(dat$t_min, dat$yearmonth, mean, na.rm=TRUE))
+mlydat$t_mean <- as.numeric(
+    tapply(dat$t_mean, dat$yearmonth, mean, na.rm=TRUE))
 
-mlydat$rain <- as.numeric(tapply(dat$rain, dat$yearmonth,
-                                 sum,na.rm=TRUE))
-mlydat$snow <- as.numeric(tapply(dat$snow, dat$yearmonth,
-                                 sum,na.rm=TRUE))
-mlydat$precip <- as.numeric(tapply(dat$precip, dat$yearmonth,
-                                   sum,na.rm=TRUE))
-print(head(mlydat),12)
+# sums for precipitation-related data
+mlydat$rain <- as.numeric(
+    tapply(dat$rain, dat$yearmonth, sum, na.rm=TRUE))
+mlydat$snow <- as.numeric(
+    tapply(dat$snow, dat$yearmonth, sum, na.rm=TRUE))
+mlydat$precip <- as.numeric(
+    tapply(dat$precip, dat$yearmonth, sum, na.rm=TRUE))
+print(head(mlydat), 12)
 
 # Show how to convert from a HLY file into daily summaries
 \dontrun{
-# this is currently shown somewhere at http://www.sfu.ca/~mwtoews/
 hlydat <- read.msc(bzfile("HLY11_L1127800.bz2"), flags=TRUE)
 hlydat$date <- factor(hlydat$date)
 
@@ -162,9 +154,9 @@ dlydat$na <- as.integer(sumdat)
 # quality control to remove days with less than 4 hours missing
 Summerland <- dlydat[dlydat$na < 4,]
 
-attr(Summerland$solar,"units") <- "W/(m^2*day"
-attr(Summerland$solar,"long.name") <- "Daily total global solar radiation"
-plot.seas.var(Summerland,var="solar", col="yellow", width=5)
+attr(Summerland$solar, "units") <- "W/(m^2*day)"
+attr(Summerland$solar, "long.name") <- "Daily total global solar radiation"
+plot.seas.var(Summerland, var="solar", col="yellow", width=5)
 }
 }
 \keyword{file}

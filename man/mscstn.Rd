@@ -33,7 +33,7 @@
 }
 \seealso{\code{\link{getstnname}}, \code{\link{mscdata}},
   \code{\link{read.msc}}}
-\author{M.W. Toews}
+\author{Mike Toews}
 \examples{
 data(mscstn)
 str(mscstn)

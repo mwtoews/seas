@@ -8,14 +8,14 @@
 }
 \synopsis{
 plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
-           var=c("t_min","t_max","t_mean"),
+           var=c("t_min", "t_max", "t_mean"),
            add.alt=FALSE, ylim, main, ylab, ...)
 }
 \usage{
 plot.seas.temp(x)
 
 plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
-           var=c("t_min","t_max","t_mean"),
+           var=c("t_min", "t_max", "t_mean"),
            add.alt=FALSE, ylim, main, ylab, \ldots)
 }
 \arguments{
@@ -38,7 +38,7 @@ plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
     are in \enc{°}{deg}C, the alternative is \enc{°}{deg}F; if units are
     \enc{°}{deg}F, the alternative is \enc{°}{deg}C; and if units are K,
     the alternative is \enc{°}{deg}C}
-  \item{ylim}{\code{c(min,max)} range for temperature, or y-axis}
+  \item{ylim}{\code{c(min, max)} range for temperature, or y-axis}
   \item{main}{title for plot; if it is missing, then it will
     automatically be generated}
   \item{ylab}{y-axis label; if it is missing, then it will automatically
@@ -55,7 +55,7 @@ plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
 \value{
   Returns values from \code{\link{boxplot}} statistics on mean temperature.
 }
-\author{M.W. Toews}
+\author{Mike Toews}
 \seealso{\code{\link{plot.seas.var}}, \code{\link{plot.seas.norm}},
   \code{\link{plot.year}}
   
@@ -64,7 +64,7 @@ plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
 \examples{
 data(mscdata)
 
-dat <- mksub(mscdata,id=1108447)
+dat <- mksub(mscdata, id=1108447)
 plot.seas.temp(dat)
 plot.seas.temp(dat, width="mon", add.alt=TRUE)
 

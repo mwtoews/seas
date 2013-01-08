@@ -9,8 +9,8 @@
   and for Visual HELP.
 }
 \usage{
-write.help(file, dat, var="", name="", region, lat,
-           visual.help=FALSE, metric=TRUE)
+write.help(file, dat, var = "", name = "", region, lat,
+           visual.help = FALSE, metric = TRUE)
 }
 \arguments{
   \item{file}{name of output file; [DOS] HELP uses extensions
@@ -36,7 +36,7 @@ write.help(file, dat, var="", name="", region, lat,
   tested; please report any errors to me.
 
   HELP requires continuous data; no missing values are allowed.
-  
+
   Data imported from SDSM use a 365-day calendar, and can be
   approximated using \code{\link{conv365toGregorian}}.
 }
@@ -44,11 +44,11 @@ write.help(file, dat, var="", name="", region, lat,
 \references{
   HELP 3.07 - Original version for the US EPA; free download \cr
   \url{http://el.erdc.usace.army.mil/products.cfm?Topic=model&Type=landfill}
-	
+
   HELP 3.80D - Developed by Dr. Klaus Berger, University
   of Hamburg \cr
   \url{http://www.geowiss.uni-hamburg.de/i-boden/fsimhelp_e.htm}
-	
+
   Visual HELP - Uses a similar underlying code as HELP 3.07, but
   features a Windows GUI \cr
   \url{http://www.swstechnology.com/groundwater-software/unsaturated-zone-modeling/visual-help}

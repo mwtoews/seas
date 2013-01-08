@@ -43,7 +43,7 @@ seas.sum.check(x, orig, var, norm, year.filter, ann.only)
 \section{Value}{
   \code{seas.df.check} returns a few helpful items from \code{x} in a
   \code{\link{list}} using \code{\link{invisible}}:
-  
+
   \itemize{
     \item{\code{id}:}{station ID from one of \code{attr(x,"id")} or
       \code{x$id[1]}}
@@ -56,9 +56,8 @@ seas.sum.check(x, orig, var, norm, year.filter, ann.only)
     \item{\code{units}:}{units for \code{var[1]}}
     \item{\code{long.name}:}{long name for \code{var[1]}}
     \item{\code{ylab}:}{y-axis label for \code{var[1]}}
-
   }
-  
+
   \code{seas.sum.check} returns \code{x} with modifications, depending
   on \code{norm} and \code{year.filter}.
 }

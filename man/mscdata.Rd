@@ -29,7 +29,7 @@
   The climate variables have attributes (\code{\link{attr}} of
   \code{units} and \code{long.name} to identify their units and long
   names for plotting labels.
-  
+
   There are three climate stations in this data frame from:
   \tabular{lll}{
     \bold{ID} \tab \bold{Station Location} \tab \bold{Province}\cr
@@ -37,7 +37,7 @@
     1108447   \tab Vancouver               \tab \acronym{BC}\cr
     2100630   \tab Haines Junction         \tab \acronym{YT}
   }
-  
+
   All data spans from 1975 to 2004 for each station. Missing values are
   present.
 }
@@ -55,7 +55,7 @@
   permission. This data may only be reproduced for personal use; any
   other reproduction is permitted only with the written consent of
   Environment Canada.\cr
-  
+
   \url{http://www.msc.ec.gc.ca/}
   \cr\url{http://climate.weatheroffice.gc.ca/contacts/}
 }
@@ -97,8 +97,8 @@ dat <- mksub(mscdata, id=1108447)
 dat$month <- mkseas(dat, "mon")
 plot(t_mean ~ date, dat, "l")
 plot(t_mean ~ date, dat, subset=(month == "Dec"))
-plot.seas.temp(dat)
-plot.year(dat)
+seas.temp.plot(dat)
+year.plot(dat)
 
 # plot high-resolution statistics
 dly.tmp <- tapply(dat$t_mean, dat$yday,

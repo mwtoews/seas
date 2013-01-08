@@ -1,7 +1,8 @@
-conv365toGregorian <- function(x){
+conv365toGregorian <-
+function(x) {
   sc <- seas.df.check(x)  # make sure it has a date column
   a <- list()  # make a copy of the column attributes
-  for (n in names(x)){
+  for (n in names(x)) {
     tmp <- attributes(x[[n]])  # strip out unneeded attributes
     srp <- names(tmp) %in% c("dim", "dimnames", "names")
     a[[n]] <- if (any(srp))
@@ -18,7 +19,7 @@ conv365toGregorian <- function(x){
   comb <- merge(x, Gdates, by="date", all.y=TRUE)
   nm <- names(comb)
   nm <- nm[nm != "date"]
-  miss <- which(apply(comb[,nm,drop=FALSE], 1, function(x) all(is.na(x))))
+  miss <- which(apply(comb[,nm, drop=FALSE], 1, function(x) all(is.na(x))))
   if (any(diff(miss) <= 1))
     stop("More than one consecutive day(s) missing")
   comb[miss,] <- comb[miss - 1,]  # the day before

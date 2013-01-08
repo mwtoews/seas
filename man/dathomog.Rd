@@ -23,7 +23,7 @@ dathomog(x1, x2, by = "date", plot = FALSE)
   \code{x1} will be used directly. Variables will be
   homogenized where their names are identical, found using
   \code{\link{names}}.
-  
+
   The cross-plots of the data are shown only for interest. They show
   useful correlation statistics, and a best-fit line using perpendicular
   offsets (which are preferred in this case over traditional linear
@@ -47,10 +47,10 @@ dathomog(x1, x2, by = "date", plot = FALSE)
 data(mscdata)
 dat1 <- mksub(mscdata, id=2100630)
 dat2 <- mksub(mscdata, id=1108447)
-plot.year(dat1)
-plot.year(dat2)
+year.plot(dat1)
+year.plot(dat2)
 newdata <- dathomog(dat1, dat2)
-plot.year(newdata)
+year.plot(newdata)
 message(paste(c("This is a rather poor example, since the",
                 "two stations are nowhere near each other"),
                 collapse="\n"))

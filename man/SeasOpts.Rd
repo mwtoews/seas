@@ -14,7 +14,7 @@ setSeasOpts()
   such as \sQuote{black and white}. However, after the initial setting of
   options, users may change the options to modify the look of graphics
   produced in \pkg{seas}.
-  
+
   Other details of the graphics can be modified using
   \code{\link{par}}. This includes the font sizes, back-ground colour,
   font family, and many others. For example, setting \code{par(cex=0.75)}
@@ -35,7 +35,7 @@ setSeasOpts()
   \code{\link{list}}s, which make them easy to \sQuote{get}, but
   difficult to \sQuote{set}, and is shown in the
   \emph{Examples} section at the bottom.
-  
+
   \describe{
     \item{\code{seas.main}:}{formating style for main title:
       \describe{
@@ -95,16 +95,16 @@ setSeasOpts()
       }
     }
     \item{\code{seas.temp}:}{attributes which affect the display of
-      \code{\link{plot.seas.temp}} (among other functions):
+      \code{\link{seas.temp.plot}} (among other functions):
       \describe{
 	\item{\code{col}:}{colours for boxplot fill and diurnal variability
 	  lines; \code{c("lightgrey","red")}}
 	\item{\code{lwd}:}{width of diurnal variability lines in
-	  \code{plot.seas.temp}, multiplied by \code{par("lwd")};
+	  \code{seas.temp.plot}, multiplied by \code{par("lwd")};
 	  \code{3}}
       }
     }
-    
+
     \item{\code{seas.precip}:}{attributes which affect the display of
       precipitation:
       \describe{

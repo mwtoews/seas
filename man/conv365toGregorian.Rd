@@ -6,9 +6,6 @@
   Gregorian calendar, repeating data from December 30th on a leap year
   to the remaining and missing December 31st.
 }
-\synopsis{
-conv365toGregorian(x)
-}
 \usage{
 conv365toGregorian(x)
 }

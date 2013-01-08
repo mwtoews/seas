@@ -11,23 +11,16 @@
   Read and write data from the LARS-WG stochastic weather generator
   file formats; also convert to a format for HELP
 }
-\synopsis{
-read.lars(stfile, year.offset=0)
-write.lars(x, stfile, datfile, site, lat, lon, alt)
-
-lars2help(infile, outfile, year.offset, site)
-write.lars.scenario(file, x1, x2, name="anomaly")
-}
 \usage{
 # read synthetic or observed *.st file
-read.lars(stfile, year.offset=0)
+read.lars(stfile, year.offset = 0)
 
 # write observed climate data (*.st and/or *.sr)
 write.lars(x, stfile, datfile, site, lat, lon, alt)
 
 # experimental functions (may not work great; or at all!)
 lars2help(infile, outfile, year.offset, site)
-write.lars.scenario(file, x1, x2, name="anomaly")
+write.lars.scenario(file, x1, x2, name = "anomaly")
 }
 \arguments{
   \item{stfile}{file name with \file{*.st} extension; this is a
@@ -88,7 +81,7 @@ write.lars.scenario(file, x1, x2, name="anomaly")
 
   To write climate data from \R to a LARS-WG file, the \code{data.frame}
   names need to match those in the \pkg{seas}-side of the table.
-  
+
   Data exported from \code{write.lars} always has legal (according to
   the Gregorian calendar) and increasing sequence of days (even if there
   are gaps in \code{x$date}). Missing data values are written as
@@ -124,10 +117,10 @@ str(summ)
 
 # plot temperature
 summ$t_mean <- rowMeans(summ[, c("t_min", "t_max")])
-plot.seas.temp(summ)
+seas.temp.plot(summ)
 
 # plot solar radiation
-plot.seas.var(summ, "solar")
+seas.var.plot(summ, "solar")
 
 # plot precipitation
 summ.ss <- seas.sum(summ)

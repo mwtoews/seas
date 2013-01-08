@@ -7,18 +7,12 @@
   Reads and writes the data format used in
   SDSM's \file{DAT} and \file{OUT} extensions.
 }
-\synopsis{
-read.sdsm(file, start = 1961, end = 2000, calendar)
-write.sdsm(dat, var, start, end, file = "")
-}
 \usage{
 # reading
 read.sdsm(file, start = 1961, end = 2000, calendar)
-read.sdsm(file)
 
 # writing
-write.sdsm(dat, var, start, end, file)
-write.sdsm(dat, var)
+write.sdsm(dat, var, start, end, file = "")
 }
 \arguments{
   \item{file}{name of \file{DAT} or \file{OUT} file}
@@ -51,10 +45,10 @@ write.sdsm(dat, var)
   \sQuote{SDSM - a decision support tool for the assessment of regional
     climate change impacts}, \emph{Environmental Modelling Software},
   \bold{77}, 473--471.
-  
+
   SDSM can be downloaded free-of-charge for Windows platforms from \cr
   \url{http://co-public.lboro.ac.uk/cocwd/SDSM/}
-  
+
   CGCM1 and HADCM3 model data for SDSM can be downloaded from the
   Canadian Climate Impacts and Scenarios website: \cr
   \url{http://www.cics.uvic.ca/scenarios/sdsm/select.cgi}

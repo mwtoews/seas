@@ -11,10 +11,10 @@
 }
 \usage{
 .seasxlab(width, start.day)
-.seasylab(var, long.name=NULL, units=NULL)
-.seastitle(main=NULL, id=NULL, name=NULL,
-           orig=NULL, fun=NULL, range=NA)
-.seasmonthgrid(width, days, start=1, rep=0, start.day=1, month.label)
+.seasylab(var, long.name = NULL, units = NULL)
+.seastitle(main = NULL, id = NULL, name = NULL,
+           orig = NULL, fun = NULL, range = NA)
+.seasmonthgrid(width, days, start = 1, rep = 0, start.day = 1, month.label)
 }
 \arguments{
   \item{orig}{original object name, which is used if no other name can
@@ -41,14 +41,14 @@
 \details{
   These functions are intended for producing the graphics, and do not
   need to be used directly.
-  
+
   The month grid is drawn by \code{.seasmonthgrid}, and can be
   fine-tuned by setting some \link{options} in the \R environment, found in
   \code{seas.month.grid}. This \code{\link{list}}, for instance, has
   \code{len} to adjust the length of each month label, and \code{col}
   for the colour of the lines. See \code{\link{SeasOpts}} for all
-  available options, and instructions on how to change them. 
-  
+  available options, and instructions on how to change them.
+
   The main and variable/unit label formating can also be customized by
   setting other options, documented in \code{\link{SeasOpts}}.
 }

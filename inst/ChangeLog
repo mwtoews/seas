@@ -1,6 +1,15 @@
 This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
+Version 0.4-1
+2013-01-09
+ - further syntax improvements in R code
+ - update man pages, remove \synopsis sections
+ - removed hidden (older?) function in seas.norm.R
+ - rename non-S3 functions:
+  - plot.year -> year.plot
+  - plot.seas.temp -> seas.temp.plot
+  - plot.seas.var -> seas.var.plot
 
 Version 0.4-0
 2013-01-04

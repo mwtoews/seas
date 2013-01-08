@@ -6,12 +6,7 @@
   Reads a Meteorological Service of Canada (\acronym{MSC}) digital
   archive files (HLY and DLY formats) into a data.frame.
 }
-\synopsis{
-read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
-}
 \usage{
-read.msc(file)
-
 read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
 }
 \arguments{
@@ -32,12 +27,12 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   This function currently reads in HLY (hourly) and DLY (daily) archive
   formats. This is automatically detected. The other formats, FIF
   (fifteen-minute) and MLY (monthly), are not currently supported.
-  
+
   The input file can include multiple stations and multiple elements
   (measured variables). The multiple stations are deciphered through
   the \code{id} column, and the multiple variables appear as columns to
   the output data frame.
-  
+
   This function currently only reads a limited number of elements,
   however additional elements can be used by editing two lines in the R
   source for this function.
@@ -45,7 +40,7 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
 \section{Value}{
   Returns a \code{\link{data.frame}} object with the following minimum
   fields:
-  
+
   \describe{
     \item{\code{id}:}{\code{\link{factor}} used to distinguish multiple
       stations within a single data frame}
@@ -61,7 +56,7 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
       \code{dat$varname}}
     \item{\code{flag}:}{\code{factor}; included if \code{flags=TRUE}}
   }
-  
+
   The are as many \code{element} columns for each element found in the
   archive file, such as:
   \tabular{rlll}{
@@ -82,13 +77,13 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   Additional elements (or variables) can be added by specifying the
   \code{element} variable, and their units can be set using, for
   example, \code{attr(dat$var, "units") <- "cm"}.
-  
+
   Units are in common metric units: \sQuote{mm} for precipitation-related
   measurements, \sQuote{cm} for snow depth, and
   \sQuote{\enc{°}{degrees }C} for temperature. The \code{flag} columns are
   a single character \code{\link{factor}}, described in the \acronym{MSC}
   Archive documentation. Units are added to each column using, for example
-  \code{attr(dat$precip), "units") <- "mm"}. In addition
+  \code{attr(dat$precip, "units") <- "mm"}.
 }
 \source{
   Climate data can be requested from \acronym{MSC}, or can be obtained
@@ -110,8 +105,8 @@ print(fname)
 dat <- read.msc(fname)
 print(head(dat))
 
-plot.seas.temp(dat)
-plot.year(dat)
+seas.temp.plot(dat)
+year.plot(dat)
 
 # Show how to convert from daily to monthly data
 dat$yearmonth <- factor(paste(format(dat$date, "\%Y-\%m"), 15, sep="-"))
@@ -156,7 +151,7 @@ Summerland <- dlydat[dlydat$na < 4,]
 
 attr(Summerland$solar, "units") <- "W/(m^2*day)"
 attr(Summerland$solar, "long.name") <- "Daily total global solar radiation"
-plot.seas.var(Summerland, var="solar", col="yellow", width=5)
+seas.var.plot(Summerland, var="solar", col="yellow", width=5)
 }
 }
 \keyword{file}

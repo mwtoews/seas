@@ -1,4 +1,5 @@
-\name{plot.seas.temp}
+\name{seas.temp.plot}
+\alias{seas.temp.plot}
 \alias{plot.seas.temp}
 \encoding{latin1}
 \title{Plot seasonal temperature normals}
@@ -6,17 +7,10 @@
   Plot seasonal temperature normals using boxplots, and also plot
   seasonal diurnal variability between minimum and maximum temperature.
 }
-\synopsis{
-plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
-           var=c("t_min", "t_max", "t_mean"),
-           add.alt=FALSE, ylim, main, ylab, ...)
-}
 \usage{
-plot.seas.temp(x)
-
-plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
-           var=c("t_min", "t_max", "t_mean"),
-           add.alt=FALSE, ylim, main, ylab, \ldots)
+seas.temp.plot(x, width = 11, start = 1, rep = 0, start.day = 1,
+           var = c("t_min", "t_max", "t_mean"),
+           add.alt = FALSE, ylim, main, ylab, \ldots)
 }
 \arguments{
   \item{x}{a \code{data.frame} with \code{\link{Date}}, \code{t_min},
@@ -52,23 +46,28 @@ plot.seas.temp(x, width=11, start=1, rep=0, start.day=1,
   not supplied, it is calculated from the mean of daily maximum and
   minimum temperatures.
 }
+\note{
+  This function was formerly named \code{plot.seas.temp}, but required
+  renaming as it is not an S3 method.
+}
 \value{
   Returns values from \code{\link{boxplot}} statistics on mean temperature.
 }
 \author{Mike Toews}
-\seealso{\code{\link{plot.seas.var}}, \code{\link{plot.seas.norm}},
-  \code{\link{plot.year}}
-  
+\seealso{
+  \code{\link{seas.var.plot}}, \code{\link{plot.seas.norm}},
+  \code{\link{year.plot}}
+
   Use \code{mksub} to make a subset of \code{x}.
 }
 \examples{
 data(mscdata)
 
 dat <- mksub(mscdata, id=1108447)
-plot.seas.temp(dat)
-plot.seas.temp(dat, width="mon", add.alt=TRUE)
+seas.temp.plot(dat)
+seas.temp.plot(dat, width="mon", add.alt=TRUE)
 
 # starting and ending elsewhere
-plot.seas.temp(dat, start=18, rep=3)
+seas.temp.plot(dat, start=18, rep=3)
 }
 \keyword{hplot}

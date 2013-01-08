@@ -7,8 +7,8 @@
   throughout the season. The mean value is also drawn as a single line.
 }
 \usage{
-\method{plot}{interarrival}(x, width=11, start=1, rep=0, start.day=1,
-           ylog=FALSE, maxy, main, \ldots)
+\method{plot}{interarrival}(x, width = 11, start = 1, rep = 0, start.day = 1,
+           ylog = FALSE, maxy, main, \ldots)
 }
 \arguments{
   \item{x}{an \code{\link{interarrival}} object with numbers of
@@ -28,7 +28,7 @@
   \item{\ldots}{ignored}
 }
 \author{Mike Toews}
-\seealso{\code{\link{interarrival}}, \code{\link{plot.seas.var}}}
+\seealso{\code{\link{interarrival}}, \code{\link{seas.var.plot}}}
 \examples{
 data(mscdata)
 

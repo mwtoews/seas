@@ -25,7 +25,7 @@
   \code{data.frame} with multiple stations or sets. The \code{x}
   object can have many columns, representing measured variables for each
   day, which will be returned with their original \link{attributes}.
-  
+
   If \code{id} is used, that station will be extracted from
   \code{x}. If \code{id} is not provided, but there are more than one
   unique IDs in \code{x$id}, the first unique ID will be extracted, with
@@ -54,7 +54,7 @@ str(mksub(mscdata, id=1108447, start=1980, end=1989))
 # A range of dates
 summary(mksub(mscdata, id=1108447,
               start=as.Date("1975-08-01"),
-                end=as.Date("2000-07-31")))
+              end=as.Date("2000-07-31")))
 }
 \keyword{datagen}
 \keyword{utilities}

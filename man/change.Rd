@@ -6,19 +6,10 @@
   absolute changes are found between the central tendency and spread of
   each seasonal state.
 }
-\synopsis{
-change(x1, x2, var1, var2=var1, width="mon",
-       cent="mean", sprd="sd", disc=FALSE, inter=FALSE,
-       p.cut=0.3, start.day=1, calendar)
-}
 \usage{
-# minimum usage
-change(x1, x2, var1)
-
-# all options
-change(x1, x2, var1, var2=var1, width="mon",
-       cent="mean", sprd="sd", disc=FALSE, inter=FALSE,
-       p.cut=0.3, start.day=1, calendar)
+change(x1, x2, var1, var2 = var1, width = "mon",
+       cent = "mean", sprd = "sd", disc = FALSE, inter = FALSE,
+       p.cut = 0.3, start.day = 1, calendar)
 }
 \arguments{
   \item{x1}{a \code{data.frame} of seasonal data}

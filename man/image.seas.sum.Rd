@@ -6,10 +6,9 @@
   solution of the median/quantile \dQuote{normal}
 }
 \usage{
-\method{image}{seas.sum}(x, var, norm = "days", start=1, rep=0, zlim, alim,
+\method{image}{seas.sum}(x, var, norm = "days", start = 1, rep = 0, zlim, alim,
     palette = colorRampPalette(c("white", "blue"))(64),
-    year.filter, power, contour=TRUE, show.median,
-    main, \ldots)
+    year.filter, power, contour = TRUE, show.median, main, \ldots)
 }
 \arguments{
   \item{x}{a \code{\link{seas.sum}} object}
@@ -25,7 +24,7 @@
   \item{rep}{repetition of the bins (columns)}
   \item{zlim}{range of normalized values displayed; this can be either a
     single number for the maximum (minimum set to zero), or a
-    \code{c(min,max)} range with a defined minimum}
+    \code{c(min, max)} range with a defined minimum}
   \item{alim}{if \code{show.median}, this is the range for the annual
     sums; this can either be a singe number for the maximum (minimum set
     to zero, or a \code{c(min, max)} range with a defined minimum}

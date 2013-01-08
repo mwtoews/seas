@@ -6,7 +6,7 @@
   station with a given precipitation normal.
 }
 \usage{
-precip.dep(x, norm, var="precip")
+precip.dep(x, norm, var = "precip")
 }
 \arguments{
   \item{x}{a seasonal \code{data.frame} of climate data}
@@ -31,7 +31,7 @@ precip.dep(x, norm, var="precip")
   The selection of \code{fun} in \code{\link{precip.norm}}, such as
   using \code{\link{mean}} or \code{\link{median}}, will affect
   the result of this function; \code{width} has only a minor effect.
-  
+
   Periods with missing (\code{NA}) values in \code{var} of \code{x} will
   have a flat departure, neither increasing nor decreasing.
 }

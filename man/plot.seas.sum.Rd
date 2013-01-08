@@ -6,8 +6,8 @@
   Plots normalized seasonal sums using boxplots.
 }
 \usage{
-\method{plot}{seas.sum}(x, var, norm="days", year.filter, ylim,
-    start=1, rep=0, col="lightgrey", main, ylab, \ldots)
+\method{plot}{seas.sum}(x, var, norm = "days", year.filter, ylim,
+    start = 1, rep = 0, col = "lightgrey", main, ylab, \ldots)
 }
 \arguments{
   \item{x}{a \code{seas.sum} object created by \code{\link{seas.sum}}}
@@ -31,7 +31,7 @@
 \details{
   This function is a boxplot interpretation of a \code{seas.sum}
   object. This is not the same as treating \code{var} as a continuous
-  variable and using \code{plot.seas.var}, since a \code{seas.sum}
+  variable and using \code{seas.var.plot}, since a \code{seas.sum}
   object has been smoothed. Daily extreme values are not well
   represented here as a result.
 }
@@ -65,6 +65,5 @@ dat2.ss <- seas.sum(dat, var="snow", width="mon",
 par(yaxs="i")
 plot(dat2.ss, var="snow")
 plot(dat2.ss, var="snow", norm="active")
-
 }
 \keyword{hplot}

@@ -14,7 +14,7 @@ function(width, start.day) {
     gettext("Two months")
   else as.character(width[1])
   if (!is.null(start.day) && start.day != 1) {
-    if (inherits(start.day,c("POSIXct","Date"))) {
+    if (inherits(start.day, c("POSIXct", "Date"))) {
       mday <- as.integer(format(start.day, "%d"))
       fmt <- if (mday == 1)
         getOption("seas.label")$month
@@ -33,7 +33,7 @@ function(width, start.day) {
 }
 
 ".seasylab" <-
-function(var, long.name=NULL, units=NULL) {
+function(var, long.name = NULL, units = NULL) {
   ylab <- if (is.null(long.name)) var else long.name
   if (!is.null(units))
     ylab <- sprintf(getOption("seas.label")$fmt, ylab, units)
@@ -41,13 +41,14 @@ function(var, long.name=NULL, units=NULL) {
 }
 
 ".seastitle" <- 
-function(main=NULL, id=NULL, name=NULL, orig=NULL, fun=NULL, range=NA) {
+function(main = NULL, id = NULL, name = NULL,
+         orig = NULL, fun = NULL, range = NA) {
   op <- getOption("seas.main")
   if (is.null(main)) {
     if (is.null(name) && !is.null(id) && op$show.id)
       name <- getstnname(id)
     if (!is.null(name) && !is.null(id) && op$show.id)
-      main <- paste(name,id)
+      main <- paste(name, id)
     else if (!is.null(name) && (!op$show.id || is.null(id)))
       main <- name
     else if (!is.null(id) && op$show.id)
@@ -69,7 +70,7 @@ function(main=NULL, id=NULL, name=NULL, orig=NULL, fun=NULL, range=NA) {
 }
 
 ".seasmonthgrid" <-
-function(width, days, start=1, rep=0, start.day=1, month.label) {
+function(width, days, start = 1, rep = 0, start.day = 1, month.label) {
   op <- getOption("seas.month.grid")
   if (is.numeric(width)) {
     num.bin <- length(days)
@@ -82,7 +83,7 @@ function(width, days, start=1, rep=0, start.day=1, month.label) {
       else
         month.days <- rep(year.length / 12, 12)
     }
-    if (inherits(start.day,c("POSIXct", "Date"))) {
+    if (inherits(start.day, c("POSIXct", "Date"))) {
       start.std <- as.Date(format(start.day, "2000-%m-%d"))
       start.yday <- as.integer(format(start.std, "%j"))
     } else {
@@ -95,7 +96,7 @@ function(width, days, start=1, rep=0, start.day=1, month.label) {
     sel.bin <- seq(start - 1, start + num - 2) %% num.bin + 1
     bdf <- data.frame(pos=1:num, bin=sel.bin, width=days[sel.bin])
     bdf$yday <- cumsum(bdf$width) - bdf$width + start.yday
-    yday2pos <- function(yday){  # y=mx+b, using intervals
+    yday2pos <- function(yday) {  # y=mx+b, using intervals
       p <- findInterval(yday, bdf$yday)
       if (p < 1) p <- 1
       m <- 1 / bdf$width[p]

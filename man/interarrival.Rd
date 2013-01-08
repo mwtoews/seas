@@ -6,14 +6,7 @@
   of days between precipitation events (dry days), and the number of
   days of continuous precipitation (wet days).
 }
-\synopsis{
-interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
-}
 \usage{
-# minimum
-interarrival(x)
-
-# with optional arguments
 interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
 }
 \arguments{
@@ -36,7 +29,7 @@ interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
   \emph{dry} and \emph{wet} days relative to a single date. The date
   represents the first day of precipitation (if \code{inv=TRUE}, this
   convention is inverted to the first day of non-precipitation).
-  
+
   Missing or \code{NA} precipitation values voids the number of counted
   days between and within segments, which implies that days without
   precipitation need to explicitly have zeros.

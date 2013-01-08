@@ -5,16 +5,8 @@
   Discretizes a date into an annum, using a starting day to specify the
   start of a season, and ends in the next year.
 }
-\synopsis{
-mkann(x, start.day, calendar)
-}
 \usage{
-# normal usage, where 'x' is a data.frame with a date column
-mkann(x)
-
-# all options
 mkann(x, start.day, calendar)
-
 }
 \arguments{
   \item{x}{A \code{data.frame} with a \code{date} column
@@ -27,7 +19,7 @@ mkann(x, start.day, calendar)
     \code{as.Date("2000-08-01")} for August 1st of any year); or it can
     be a day of the year, from 1--365}
   \item{calendar}{if unspecified, it will be attempted to be read from
-    \code{attr(x$date}); otherwise it is assumed to be a normal
+    \code{attr(x$date)}; otherwise it is assumed to be a normal
     proleptic Gregorian calendar; see \code{\link{year.length}}}
 }
 \details{

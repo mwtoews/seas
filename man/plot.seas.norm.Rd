@@ -8,9 +8,9 @@
   available). Significant missing data values are also indicated.
 }
 \usage{
-\method{plot}{seas.norm}(x, start=1, rep=0, ylim,
-     varwidth=FALSE, normwidth=FALSE,
-     leg, add.alt=FALSE, main, ylab, \ldots)
+\method{plot}{seas.norm}(x, start = 1, rep = 0, ylim,
+     varwidth = FALSE, normwidth = FALSE,
+     leg, add.alt = FALSE, main, ylab, \ldots)
 }
 \arguments{
   \item{x}{a \code{seas.norm} object created by either

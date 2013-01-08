@@ -8,18 +8,7 @@
   \code{\link{seas.sum}} object, including precipitation normals for
   rain, snow and total precipitation.
 }
-\synopsis{
-seas.norm(x, var, fun = "median", norm = "days", year.filter,
-          ann.only = FALSE, precip.norm = FALSE)
-precip.norm(x, fun = "median", norm = "days", year.filter)
-}
 \usage{
-# minimum
-seas.norm(x)
-
-precip.norm(x)
-
-# all options
 seas.norm(x, var, fun = "median", norm = "days", year.filter,
           ann.only = FALSE, precip.norm = FALSE)
 
@@ -51,7 +40,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   This function calculates the statistics of precipitation data on an
   \emph{annual} and \emph{seasonal} scope from a \code{\link{seas.sum}}
   object.
-  
+
   The seasonal input data are normalized by the number of days in each
   bin, to produce a precipitation rate in \sQuote{mm/day}. This is
   because the number of days in each bin is not equal. The function
@@ -65,7 +54,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
     the 20\% quantile \cr
     \code{function(i, na.rm)(mean(i, na.rm=na.rm) / (sd(i, na.rm=na.rm)^3))} \tab skewness
   }
-  
+
   If \code{fun = "\link{mean}"}, then the statistics are
   straightforward (using \code{\link{apply}}), however if \code{fun =
     "median"} and there are more than 2 years of data, a different
@@ -78,7 +67,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   is a value that is not always occurring. It often has a left-skewed
   distribution, consisting of many zero measurements, and few extreme
   precipitation events.
-  
+
   In this function, if \code{fun = "median"} (default) the
   \code{\link{median}} function is only used to calculate the median
   annual precipitation. The \code{\link{quantile}} function is used to
@@ -89,7 +78,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   found using a secant method (Cheny and Kincaid, 1999) such that the
   sum of the quantiles from each bin are equal to the median of the
   annual precipitation.
-  
+
   Snow and rain (which are the two components of precipitation) are
   calculated similarly (if \code{fun = "median"}).  The annual total
   rain and snow amounts are determined by finding the percentile of a
@@ -103,7 +92,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   seasonal precipitation. This way, a figure with
   \code{precip.only = TRUE} and \code{= FALSE} will have identical daily
   precipitation rates in each bin.
-  
+
   The pitfalls of calculating precipitation \sQuote{normals} is that it
   assumes that precipitation occurs \emph{every} day at a constant rate
   within each bin. This is not realistic, as the precipitation rates are
@@ -144,7 +133,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
 \references{
   Cheny, E. W. and Kincaid, D. 1999, \emph{Numerical Mathematics and
     Computing}, Pacific Grove: Brooks/Cole Pub., 671 p.
-  
+
   Guttman, N.B. 1989, \sQuote{Statistical descriptors of climate},
   \emph{American Meteorological Society}, \bold{70}, 602--607.
 }
@@ -155,11 +144,11 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   because a time-derivative \emph{per month} has unequal intervals of
   time, ranging between 28 to 31 days. This directly creates up to 10\%
   error in the analysis between months.
-  
+
   Units for annual normals, however, remain \emph{per year}, since a
   year is a suitable time derivative.
 }
-\seealso{\code{\link{plot.seas.norm}}, \code{\link{plot.seas.var}},
+\seealso{\code{\link{plot.seas.norm}}, \code{\link{seas.var.plot}},
   \code{\link{precip.dep}}}
 \examples{
 data(mscdata)

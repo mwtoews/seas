@@ -17,7 +17,7 @@
   The sample file name is \file{A1128551.DLY}, which contains daily
   climate data from Vernon, British Columbia. Load this file using
   \code{\link{read.msc}}.
-  
+
   This file was created using the instructions below, with the addition
   of renaming the file extension from \file{*.ALL} to \file{*.DLY}.
 }
@@ -54,7 +54,7 @@
   \code{cat *.ALL > new.dly}). This cleans up the \R workspace by only
   using one object to refer to several stations. Stations can be
   referred to functions in \pkg{seas} using their IDs.
-  
+
   To import the archive file into \R:
   \enumerate{
     \item Start \R; type \code{library(seas)}
@@ -72,7 +72,7 @@
 \source{
   Data provided by the Meteorological Service of Canada
   (\url{http://www.msc.ec.gc.ca/}), with permission.
-  
+
   This data may only be reproduced for personal use; any other
   reproduction is permitted only with the written consent of Environment
   Canada (\url{http://climate.weatheroffice.ec.gc.ca/contacts/}).
@@ -96,7 +96,7 @@ dat <- read.msc(fname)
 head(dat)
 str(dat)
 
-plot.seas.temp(dat)
-plot.year(dat)
+seas.temp.plot(dat)
+year.plot(dat)
 }
 \keyword{datasets}

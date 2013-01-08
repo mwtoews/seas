@@ -1,18 +1,19 @@
 Package: seas
 Type: Package
-Version: 0.4-0
-Date: 2013-01-04
+Version: 0.4-1
+Date: 2013-01-09
 Title: Seasonal analysis and graphics, especially for climatology
 Author: Mike Toews
 Maintainer: Mike Toews <mwtoews@gmail.com>
 Depends: R(>= 2.10.0)
 Suggests: MASS
 Description: Capable of deriving seasonal statistics, such as "normals", and
-  analysis of seasonal data, such as departures. This package also has graphics
-  capabilities for representing seasonal data, including boxplots for seasonal
-  parameters, and bars for summed normals. There are many specific functions
-  related to climatology, including precipitation normals, temperature normals,
-  cumulative precipitation departures and precipitation interarrivals. However,
-  this package is designed to represent any time-varying parameter with a
-  discernible seasonal signal, such as found in hydrology and ecology.
+  analysis of seasonal data, such as departures. This package also has
+  graphics capabilities for representing seasonal data, including boxplots for
+  seasonal parameters, and bars for summed normals. There are many specific
+  functions related to climatology, including precipitation normals,
+  temperature normals, cumulative precipitation departures and precipitation
+  interarrivals. However, this package is designed to represent any
+  time-varying parameter with a discernible seasonal signal, such as found
+  in hydrology and ecology.
 License: BSD

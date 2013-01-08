@@ -11,10 +11,10 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
 \arguments{
   \item{x}{A \code{data.frame} with a \code{date} column
     (of \code{\link{Date}} or \code{\link{POSIXct}} class)
-    
+
     It can also be an integer specifying the Julian day (specify
     \code{year} to determine the leap year)
-    
+
     If it is omitted, the full number of days will be calculated for the
     year, determined by either \code{year} or \code{calendar}}
   \item{width}{either \code{numeric} or other \code{character} value; if
@@ -25,7 +25,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
     as a \code{Date} to specify a month and day (year is ignored; day of
     month is ignored if \code{width} relates to a month), or as a
     \code{\link{numeric}} day of year, between 1 and the number of days
-    for the calendarter a leap day)}
+    for the calendarter a leap day}
   \item{calendar}{used to determine the number of days per year and per
     bin; if not specified, a proleptic Gregorian calendar is assumed;
     see \code{\link{year.length}}}
@@ -39,7 +39,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   functions can be applied to a variable contained within each bin. An
   example of this would be to find the monthly temperature averages,
   where \emph{month} is the bin.
-  
+
   If \code{width} is \code{\link{integer}}, the width of each bin
   (except for the last) will be exactly \code{width} days. Since the
   number of days in a year are not consistent, nor are always perfectly
@@ -51,7 +51,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   the width of each bin varies slightly. Using \code{width = 366/12} is
   slightly different than \code{width = "mon"}. Leap years only affect
   the \emph{last} bin.
-  
+
   Other common classifications based on the Gregorian calendar can be
   used if \code{width} is given a \code{\link{character}} array. All of
   these systems are arbitrary: having different numbers of days in each
@@ -91,7 +91,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   normal Gregorian calendar is used. Calendars with 360-days per year
   (or 30-days per month) are incorrectly handled, since February cannot
   have 30 days, however this can be forced by including a duplicate
-  February date in \code{x} for each year).
+  February date in \code{x} for each year.
 }
 \value{
   Returns an array of \code{\link{factor}}s for each date given in \code{x}.
@@ -99,7 +99,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   \code{calendar} (assumed to be 366, unless from attribute set in
   \code{\link{Date}}), and an array \code{days} showing the maximum
   number of days in each bin.
-  
+
   See examples for its application.
 }
 \note{
@@ -109,7 +109,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   systems are to be used, ensure that there are \emph{several} years of
   data, or that the phase of the data is the same as the beginning
   Julian day.
-  
+
   For instance, if one years worth of data beginning on Julian day 1 is
   factored into \code{"DJF"} bins, the first bin will mix data from the
   first three months, and from the last month. The last three bins will
@@ -130,7 +130,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   any locale. This can be fixed by setting
   \code{options("seas.month.len") <- 3}, which forces the length of the
   months to be three-characters in length.
-  
+
   To avoid any issues supporting locales, or to use English month names,
   simply revert to a C locale: \code{\link{Sys.setlocale}(loc="C")}.
 }
@@ -200,7 +200,6 @@ plot(value ~ month, dat,
      main=.seasxlab("mon", start.day=st.day))
 plot(value ~ DJF, dat,
      main=.seasxlab("DJF", start.day=st.day))
-
 }
 \keyword{utilities}
 \keyword{datagen}

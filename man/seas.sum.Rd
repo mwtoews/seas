@@ -6,17 +6,9 @@
   (among other things, such as recharge rates); this object has sums in
   each \sQuote{bin} of a season, as well as for each annum (or year).
 }
-\synopsis{
-seas.sum(x, var, width = 11, start.day = 1, prime,
-     a.cut = 0.3, na.cut = 0.2)
-}
 \usage{
-# minimum usage
-seas.sum(x)
-
-# all options
 seas.sum(x, var, width = 11, start.day = 1, prime,
-     a.cut = 0.3, na.cut = 0.2)
+         a.cut = 0.3, na.cut = 0.2)
 }
 \arguments{
   \item{x}{a \code{data.frame} with daily variables to be summed,
@@ -24,7 +16,7 @@ seas.sum(x, var, width = 11, start.day = 1, prime,
   \item{var}{the names of one or more variables in \code{x}, such as
     \code{c("rain","snow","precip")}}
   \item{width}{a number specifying the width of the bin (factor) in
-    days, or \code{"mon"} for Months (see \code{\link{mkseas}} for
+    days, or \code{"mon"} for months (see \code{\link{mkseas}} for
     others)}
   \item{start.day}{the first day of the season, specified as either a
     \code{\link{Date}} or as an integer day of the year; annual sums
@@ -48,18 +40,18 @@ seas.sum(x, var, width = 11, start.day = 1, prime,
   normals of rates, such as precipitation and recharge. This function
   simply sums up each variable in each bin for each annum (or year), and
   provides the results in several arrays.
-  
+
   Sums are \emph{not} normalized, and represent a sum for the number of
   days in the bin (seasonal data) or annum (for annual data). Seasonal
   data can be normalized by the number of days (for a rate per day) or
   by the number of active days where \code{prime > a.cut}.
-  
+
   For annual sums, annums with \emph{many} missing values are ignored
   (receiving a value of \code{NA}) since it has insufficient data for a
   complete sum. The amount of allowable \code{NA} values per annum is
   controlled by \code{na.cut[1]}, which is a fraction of \code{NA}
   values for the whole annum (default is 0.2).
-  
+
   The seasonal sums are calculated independently from the annual
   sums. Individual bins from each year with \emph{many} missing values
   are ignored, where the amount of allowable \code{NA} values is
@@ -70,7 +62,7 @@ seas.sum(x, var, width = 11, start.day = 1, prime,
 \section{Value}{ % for describe to work
   Returns a \code{seas.sum} object, which is a \code{\link{list}} with
   the following elements:
-  
+
   \describe{
     \item{\code{ann}:}{
       A \code{data.frame} of annual data; the columns are:

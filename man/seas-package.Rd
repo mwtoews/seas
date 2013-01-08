@@ -23,7 +23,7 @@ the mean-time, please explore the various help pages and try the
 examples. Contact me for basic help and/or suggestions!
 }
 \references{
-  Toews, Mike, Whitfield, P.H., and Allen, D.M., Seasonal
+  Toews, M.W., Whitfield, P.H., and Allen, D.M., Seasonal
   statistics: The 'seas' package for R, Computers & Geosciences (2007),
   doi:10.1016/j.cageo.2006.11.011
 }

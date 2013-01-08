@@ -1,21 +1,14 @@
-\name{plot.seas.var}
+\name{seas.var.plot}
+\alias{seas.var.plot}
 \alias{plot.seas.var}
 \encoding{latin1}
 \title{Plot seasonal normals of a given variable}
 \description{
   Plot seasonal normals of a variable using boxplots.
 }
-\synopsis{
-plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
-              ylim, add.alt, alt.ylab, main, ylab, ylog, ...)
-}
 \usage{
-# minimal usage
-plot.seas.var(x, var)
-
-# full options and default
-plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
-              ylim, add.alt, alt.ylab, main, ylab, ylog, \ldots)
+seas.var.plot(x, var, width = 11, start = 1, rep = 0, start.day = 1,
+              col, ylim, add.alt, alt.ylab, main, ylab, ylog, \ldots)
 }
 \arguments{
   \item{x}{a \code{data.frame} with \code{\link{Date}} and \code{var}
@@ -54,12 +47,17 @@ plot.seas.var(x, var, width=11, start=1, rep=0, start.day=1, col,
 \details{
   Shows normals of a seasonal variable using boxplots.
 }
+\note{
+  This function was formerly named \code{plot.seas.var}, but required
+  renaming as it is not an S3 method.
+}
 \value{
   Returns values from \code{\link{boxplot}} statistics on the variable.
 }
 \author{Mike Toews}
 \seealso{
-  \code{\link{plot.seas.norm}}, \code{\link{plot.year}}.
+  \code{\link{seas.var.plot}}, \code{\link{plot.seas.norm}},
+  \code{\link{year.plot}}.
 
   Use \code{\link{mksub}} to make a subset of \code{x}.
 }
@@ -69,13 +67,13 @@ on.exit(par(opar))
 data(mscdata)
 dat <- mksub(mscdata, id=1108447)
 
-plot.seas.var(dat, var="t_max", col="tomato",
+seas.var.plot(dat, var="t_max", col="tomato",
   add.alt=c(5/9, 32), alt.ylab="F")
 abline(h=0)
 
 par(opar) # reset graphics parameters
 
-plot.seas.var(dat, var="t_min",
+seas.var.plot(dat, var="t_min",
   start=18, rep=16)
 
 pdat <- dat[dat$precip > 0,]
@@ -83,15 +81,15 @@ attr(pdat$precip, "long.name") <- "precipitation intensity"
 attr(pdat$precip, "units") <- "mm/day"
 
 par(ylog=TRUE)
-plot.seas.var(pdat, var="precip", col="azure")
+seas.var.plot(pdat, var="precip", col="azure")
 title(sub="These boxplots are simply plotted on a log-y scale")
 
 par(opar)
 
-plot.seas.var(pdat, var="precip", col="azure", ylog=TRUE)
+seas.var.plot(pdat, var="precip", col="azure", ylog=TRUE)
 title(sub="These boxplots are based on log-transformed values")
 
-plot.seas.var(pdat, var="precip", col="azure", ylog=TRUE, add.alt=TRUE)
+seas.var.plot(pdat, var="precip", col="azure", ylog=TRUE, add.alt=TRUE)
 title(sub="The actual axis for graph is on the right-side")
 }
 \keyword{hplot}

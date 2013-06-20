@@ -52,7 +52,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   \tabular{ll}{
     \code{function(i, na.rm)(quantile(i, 0.2, na.rm=na.rm, names=F))} \tab
     the 20\% quantile \cr
-    \code{function(i, na.rm)(mean(i, na.rm=na.rm) / (sd(i, na.rm=na.rm)^3))} \tab skewness
+    \code{function(i, na.rm)(mean(i, na.rm=na.rm)/(sd(i, na.rm=na.rm)^3))} \tab skewness
   }
 
   If \code{fun = "\link{mean}"}, then the statistics are

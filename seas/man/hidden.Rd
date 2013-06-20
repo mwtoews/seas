@@ -53,8 +53,8 @@
   setting other options, documented in \code{\link{SeasOpts}}.
 }
 \value{
-  .seasxlab, .seasylab and .seastitle return a \code{character} label
-  intended for plots.
+  \code{.seasxlab}, \code{.seasylab} and \code{.seastitle} return a
+  \code{character} label intended for plots.
 }
 \author{Mike Toews}
 \seealso{\code{\link{getstnname}}, \code{\link{SeasOpts}}}

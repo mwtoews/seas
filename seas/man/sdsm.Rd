@@ -57,8 +57,10 @@ write.sdsm(dat, var, start, end, file = "")
 \examples{
 \dontrun{
 # reading
-gf50 <- read.sdsm("GF_2050s_precip.OUT")
+fname <- system.file("extdata", "GF_2050s_precip.OUT", package="seas")
+gf50 <- read.sdsm(fname)
 gf50.ss <- seas.sum(gf50, var=paste("V", 1:20, sep=""), name="Grand Forks")
+
 # analysis
 image(gf50.ss, var="V1")
 image(gf50.ss, var="V2")
@@ -67,7 +69,8 @@ image(gf50.ss, var="V3")
 # writing
 data(mscdata)
 hj <- mksub(mscdata, id=2100630)
-write.sdsm(hj, "precip", 1961, 2000, "HJ_Obs_prcp.DAT")
+fname <- paste(tempdir(), "HJ_Obs_prcp.DAT", sep="/")
+write.sdsm(hj, "precip", 1961, 2000, fname)
 }
 }
 \keyword{file}

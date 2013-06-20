@@ -1,2 +1,8 @@
-# packages
+# Checks and packages
+*.Rcheck
 *.gz
+
+# R compiled files
+seas/src/*.o
+seas/src/seas.so
+seas/src/symbols.rds

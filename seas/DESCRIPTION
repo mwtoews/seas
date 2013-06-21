@@ -17,3 +17,5 @@ Description: Capable of deriving seasonal statistics, such as "normals", and
   time-varying parameter with a discernible seasonal signal, such as found
   in hydrology and ecology.
 License: BSD
+URL: http://github.com/mwtoews/seas
+BugReports: http://github.com/mwtoews/seas/issues

@@ -39,7 +39,6 @@
 \author{Mike Toews}
 \seealso{\code{\link{read.msc}}, \code{\link{mscdata}}}
 \examples{
-data(mscstn)
 data(mscdata)
 
 # All available data from one station

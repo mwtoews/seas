@@ -1,34 +1,28 @@
-====
-seas
-====
-:Author: Mike Toews
+==================
+seas package for R
+==================
 
-CRAN Submission Procedure
-~~~~~~~~~~~~~~~~~~~~~~~~~
+    Seasonal analysis and graphics, especially for climatology
 
- 1. Edit inst/ChangeLog to reflect version number, date and list of changes
- 2. Edit DESCRIPTION to reflect version number and date
- 3. From this directory, build source tar with::
+:Author: Mike Toews <mwtoews@gmail.com>
+:License: BSD License
 
-    $ R CMD build seas
+Description
+-----------
 
- 4. Check build::
+Capable of deriving seasonal statistics, such as "normals", and
+analysis of seasonal data, such as departures. This package also has
+graphics capabilities for representing seasonal data, including boxplots for
+seasonal parameters, and bars for summed normals. There are many specific
+functions related to climatology, including precipitation normals,
+temperature normals, cumulative precipitation departures and precipitation
+interarrivals. However, this package is designed to represent any
+time-varying parameter with a discernible seasonal signal, such as found
+in hydrology and ecology [1]_.
 
-    $ R CMD check --as-cran seas_x.y-z.tar.gz
+Reference
+---------
 
- 5. Upload to CRAN FTP::
-
-    $ curl -T seas_x.y-z.tar.gz ftp://cran.r-project.org/incoming/
-
- 6. Send an email:
-
-    :To: CRAN@R-project.org
-    :Subject: CRAN submission seas x.y-z
-    :Message:
-        Hi,
-        
-        I have uploaded a new version of seas to CRAN.
-        
-        Thanks,
-
-        -Mike
+.. [1] Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal
+       statistics: The 'seas' package for R. Computers & Geosciences,
+       33(7): 944-951. doi:10.1016/j.cageo.2006.11.011

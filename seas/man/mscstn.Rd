@@ -6,7 +6,7 @@
   Meteorological Service of Canada weather station data,
   including national ID, station ID, Province, latitude and longitude.
 }
-\usage{data(mscstn)}
+% \usage{seas::mscstn}
 \format{
   A \code{\link{data.frame}} with 4493 climate stations with the
   following 6 columns:
@@ -35,10 +35,9 @@
   \code{\link{read.msc}}}
 \author{Mike Toews}
 \examples{
-data(mscstn)
-str(mscstn)
+str(seas::mscstn)
 
 table(mscstn$prov)
-plot(lat ~ long, mscstn, pch=".")
+plot(lat ~ long, seas::mscstn, pch=".")
 }
 \keyword{datasets}

@@ -3,8 +3,9 @@ Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
 
 Version 0.4-3
-201?-??-??
+2014-02-26
  - fix a clang warning for potentially insecure formatting in help.c
+ - change license from BSD to GPL (>= 2)
 
 Version 0.4-2
 2013-06-20

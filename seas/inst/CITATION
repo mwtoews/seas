@@ -12,5 +12,5 @@ citEntry(entry="article",
         number = {7},
         doi = "10.1016/j.cageo.2006.11.011",
         textVersion =
-        paste("Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal statistics: The 'seas' package for R. Computers & Geosciences, 33(7): 944-951. doi:10.1016/j.cageo.2006.11.011")
+        paste("Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal statistics: The `seas' package for R. Computers & Geosciences, 33(7): 944-951. doi:10.1016/j.cageo.2006.11.011")
 )

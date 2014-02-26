@@ -25,5 +25,4 @@ CRAN Submission Procedure
         I have uploaded a new version of seas to CRAN.
         
         Thanks,
-
         -Mike

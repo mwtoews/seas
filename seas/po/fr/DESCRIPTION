@@ -1,8 +1,8 @@
 Package: seas-fr
 Type: Translation
-Version: 0.3-1
-Title: French Translations for seas-0.3-1
-Description: French Translations for seas-0.3-1
+Version: 0.4-4
+Title: French Translations for seas-0.4-4
+Description: French Translations for seas-0.4-4
 Author: Mike Toews
 Maintainer: Mike Toews <mwtoews@gmail.com>
-Licence: BSD
+Licence: GPL (>= 2)

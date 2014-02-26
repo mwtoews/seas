@@ -2,6 +2,9 @@ This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
 
+Version 0.4-4
+201??-??-??
+
 Version 0.4-3
 2014-02-26
  - fix a clang warning for potentially insecure formatting in help.c

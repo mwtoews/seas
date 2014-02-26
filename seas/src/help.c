@@ -1,6 +1,6 @@
 /* Included with seas package for R
- * (c) Mike Toews 2007, 2013
- * License: BSD
+ * (c) Mike Toews 2007-2014
+ * License: GPL (>= 2)
  */
 
 #include <stdio.h>

@@ -1,7 +1,7 @@
 Package: seas
 Type: Package
-Version: 0.4-3
-Date: 2014-02-26
+Version: 0.4-4
+Date: 201?-??-??
 Title: Seasonal analysis and graphics, especially for climatology
 Author: Mike Toews
 Maintainer: Mike Toews <mwtoews@gmail.com>

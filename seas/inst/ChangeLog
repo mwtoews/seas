@@ -2,8 +2,12 @@ This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
 
-Version 0.4-4
-201??-??-??
+Version 0.5-1
+20115-??-??
+ - bump minimum version to R 2.15
+ - improve 'read.msc' to remove duplicate records from archive file and
+   report missing elements
+ - ignore 'format' parameter for 'read.msc'
 
 Version 0.4-3
 2014-02-26

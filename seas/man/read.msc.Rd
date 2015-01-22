@@ -18,8 +18,7 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   \item{add.elem}{either a \code{\link{data.frame}} or a
     \code{\link{list}} with additional elements not found in this
     function}
-  \item{format}{force this function to read a format (not recommended,
-    since this is automatically done)}
+  \item{format}{parameter ignored and will be removed in a future release}
   \item{verbose}{\code{\link{logical}} verbose output, such as number of
     stations, elements, records and years in the archive file}
 }

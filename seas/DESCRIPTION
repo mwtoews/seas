@@ -1,11 +1,11 @@
 Package: seas
 Type: Package
-Version: 0.4-4
-Date: 201?-??-??
+Version: 0.5-1
+Date: 2015-??-??
 Title: Seasonal analysis and graphics, especially for climatology
 Author: Mike Toews
 Maintainer: Mike Toews <mwtoews@gmail.com>
-Depends: R(>= 2.10.0)
+Depends: R(>= 2.15.0)
 Suggests: MASS
 Description: Capable of deriving seasonal statistics, such as "normals", and
   analysis of seasonal data, such as departures. This package also has

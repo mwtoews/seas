@@ -25,4 +25,5 @@ Reference
 
 .. [1] Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal
        statistics: The 'seas' package for R. Computers & Geosciences,
-       33(7): 944-951. doi:10.1016/j.cageo.2006.11.011
+       33(7): 944-951. `doi:10.1016/j.cageo.2006.11.011
+       <https://dx.doi.org/10.1016/j.cageo.2006.11.011>`_

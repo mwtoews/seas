@@ -1,9 +1,11 @@
 Package: seas
 Type: Package
 Version: 0.5-1
-Date: 2015-??-??
+Date: 2018-??-??
 Title: Seasonal analysis and graphics, especially for climatology
-Author: Mike Toews
+Authors@R: person("Mike", "Toews", role = c("aut", "cre"),
+                  email = "mwtoews@gmail.com")
+Author: Mike Toews [aut, cre]
 Maintainer: Mike Toews <mwtoews@gmail.com>
 Depends: R(>= 2.15.0)
 Suggests: MASS
@@ -17,5 +19,5 @@ Description: Capable of deriving seasonal statistics, such as "normals", and
   time-varying parameter with a discernible seasonal signal, such as found
   in hydrology and ecology.
 License: GPL (>= 2)
-URL: http://github.com/mwtoews/seas
-BugReports: http://github.com/mwtoews/seas/issues
+URL: https://github.com/mwtoews/seas
+BugReports: https://github.com/mwtoews/seas/issues

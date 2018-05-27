@@ -6,3 +6,7 @@
 seas/src/*.o
 seas/src/seas.so
 seas/src/symbols.rds
+
+# Misc.
+seas.Rproj
+.Rproj.user

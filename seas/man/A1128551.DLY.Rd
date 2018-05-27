@@ -70,20 +70,19 @@
   expression to \code{write.csv(dat,"out.csv",na="#N/A")}.
 }
 \source{
-  Data provided by the Meteorological Service of Canada
-  (\url{http://www.msc.ec.gc.ca/}), with permission.
+  Data provided by the Meteorological Service of Canada, with permission.
 
   This data may only be reproduced for personal use; any other
   reproduction is permitted only with the written consent of Environment
-  Canada (\url{http://climate.weatheroffice.ec.gc.ca/contacts/}).
+  Canada (\url{https://weather.gc.ca/mainmenu/contact_us_e.html}).
 }
 \seealso{\code{\link{read.msc}}}
 \references{
-  \url{http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
+  \url{https://web.archive.org/web/20130625230337/http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} (archived) Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
 
-  \url{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} CDCD CD-ROM download location
+  \verb{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} (dead link) CDCD CD-ROM download location
 
-  \url{http://dosbox.sourceforge.net} for emulating DOS on non-Microsoft
+  \url{http://www.dosbox.com} for emulating DOS on non-Microsoft
   platforms
 
   \url{http://www.intevation.de/~bernhard/archiv/uwm/canadian_climate_cdformat/} an alternative method of extracting data from the CDCD CD-ROMs using a Python module by Bernhard Reiter

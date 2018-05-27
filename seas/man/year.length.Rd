@@ -31,7 +31,7 @@ year.length(x, calendar)
   corresponding to each year.
 }
 \author{Mike Toews}
-\references{\url{http://www.cgd.ucar.edu/cmw/eaton/cf-metadata/CF-current.html#cal}}
+\references{\url{http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#calendar}}
 \seealso{\code{\link{mkseas}}, \code{\link{mkann}}}
 \examples{
 cal <- data.frame(year=c(1899, 1900, 1904, 2000, 2080, 2100))

@@ -1,6 +1,6 @@
 \name{read.msc}
 \alias{read.msc}
-\encoding{latin1}
+\encoding{UTF-8}
 \title{Read a MSC archive file into a data.frame}
 \description{
   Reads a Meteorological Service of Canada (\acronym{MSC}) digital
@@ -61,11 +61,11 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
   \tabular{rlll}{
     \bold{alias} \tab \bold{name} \tab \bold{long.name} \tab \bold{units}\cr
     1   \tab \code{t_max}  \tab daily maximum temperature \tab
-          \enc{°}{degrees }C \cr
+          \enc{Â°}{degrees }C \cr
     2   \tab \code{t_min}  \tab daily minimum temperature \tab
-          \enc{°}{degrees }C \cr
+          \enc{Â°}{degrees }C \cr
     3   \tab \code{t_mean} \tab daily mean temperature \tab
-          \enc{°}{degrees }C \cr
+          \enc{Â°}{degrees }C \cr
     10  \tab \code{rain}   \tab total rainfall \tab mm \cr
     11  \tab \code{snow}   \tab total snowfall \tab mm \cr
     12  \tab \code{precip} \tab total precipitation \tab mm \cr
@@ -79,7 +79,7 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
 
   Units are in common metric units: \sQuote{mm} for precipitation-related
   measurements, \sQuote{cm} for snow depth, and
-  \sQuote{\enc{°}{degrees }C} for temperature. The \code{flag} columns are
+  \sQuote{\enc{?}{degrees }C} for temperature. The \code{flag} columns are
   a single character \code{\link{factor}}, described in the \acronym{MSC}
   Archive documentation. Units are added to each column using, for example
   \code{attr(dat$precip, "units") <- "mm"}.
@@ -92,9 +92,9 @@ read.msc(file, flags = FALSE, add.elem, format, verbose = TRUE)
 }
 \author{Mike Toews}
 \references{
-  \url{http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
+  \url{https://web.archive.org/web/20130625230337/http://climate.weatheroffice.gc.ca/prods_servs/documentation_index_e.html} (archived) Technical Documentation - Documentation for the Digital Archive of Canadian Climatological Data (Surface) Identified By Element
 
-  \url{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} CDCD CD-ROM download location
+  \verb{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} (dead link) CDCD CD-ROM download location
 }
 \seealso{\code{\link{mscstn}}, \code{\link{mksub}}, \code{\link{mkseas}},
     \code{\link{A1128551.DLY}}}

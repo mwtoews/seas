@@ -19,8 +19,7 @@ precip.dep(x, norm, var = "precip")
   time-series in relation to its precipitation normal over an extended
   period of time. This is especially useful for identifying changes in
   precipitation, and is useful for relating to groundwater recharge
-  patterns
-  (e.g., \url{http://www.env.gov.bc.ca/wsd/data_searches/obswell/obsw002.html}).
+  patterns.
 }
 \value{
   Returns a \code{data.frame} similar to \code{x}, but contains the

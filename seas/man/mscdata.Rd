@@ -1,7 +1,7 @@
 \name{mscdata}
 \alias{mscdata}
 \docType{data}
-\encoding{latin1}
+\encoding{UTF-8}
 \title{Meteorological Service of Canada sample climate data}
 \description{
   Sample climate data from the Meteorological Service of Canada
@@ -10,7 +10,7 @@
 \usage{data(mscdata)}
 \format{
   A \code{\link{data.frame}} with 26358 daily observations on the
-  following 10 variables (metric units of \sQuote{\enc{°}{degrees }C}
+  following 10 variables (metric units of \sQuote{\enc{Â°}{degrees }C}
   and \sQuote{mm} \emph{per day}):
   \describe{
     \item{\code{id}:}{\code{\link{factor}} used to distinguish multiple
@@ -56,8 +56,8 @@
   other reproduction is permitted only with the written consent of
   Environment Canada.\cr
 
-  \url{http://www.msc.ec.gc.ca/}
-  \cr\url{http://climate.weatheroffice.gc.ca/contacts/}
+  \url{https://weather.gc.ca/}
+  \cr\url{https://weather.gc.ca/mainmenu/contact_us_e.html}
 }
 \seealso{
   \code{\link{mscstn}} has MSC station ID codes, locations and names;

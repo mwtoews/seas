@@ -51,7 +51,7 @@ write.sdsm(dat, var, start, end, file = "")
 
   CGCM1 and HADCM3 model data for SDSM can be downloaded from the
   Canadian Climate Impacts and Scenarios website: \cr
-  \url{http://www.cics.uvic.ca/scenarios/sdsm/select.cgi}
+  \url{https://web.archive.org/web/20120218192015/http://www.cics.uvic.ca/scenarios/sdsm/select.cgi} (archived)
 }
 \seealso{\code{\link{read.msc}}, \code{\link{change}}}
 \examples{

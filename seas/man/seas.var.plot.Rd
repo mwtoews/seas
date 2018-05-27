@@ -1,7 +1,7 @@
 \name{seas.var.plot}
 \alias{seas.var.plot}
 \alias{plot.seas.var}
-\encoding{latin1}
+\encoding{UTF-8}
 \title{Plot seasonal normals of a given variable}
 \description{
   Plot seasonal normals of a variable using boxplots.
@@ -28,8 +28,8 @@ seas.var.plot(x, var, width = 11, start = 1, rep = 0, start.day = 1,
   \item{ylim}{\code{c(min, max)} range for y-axis}
   \item{add.alt}{this adds an alternative axis, and is specified by
     \code{c(slope,inter)}; for example, if the primary measure is in
-    \enc{°}{degrees }C, a secondary scale in K would be
-    \code{c(1,273.15)}, or in \enc{°}{degrees }F would be
+    \enc{Â°}{degrees }C, a secondary scale in K would be
+    \code{c(1,273.15)}, or in \enc{Â°}{degrees }F would be
     \code{c(5/9,32)}; if \code{ylog=TRUE}, then this can also be
     \code{TRUE} to display the \eqn{\log_{10}}{log10} transformed values of
     \code{var} on the alternative axis}

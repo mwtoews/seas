@@ -1,6 +1,6 @@
 \name{write.help}
 \alias{write.help}
-\encoding{latin1}
+\encoding{UTF-8}
 \title{Write climate data in the format used by the HELP model}
 \description{
   Write climate data in the format used by the Hydrological Evaluation
@@ -27,9 +27,9 @@ write.help(file, dat, var = "", name = "", region, lat,
   \item{visual.help}{\link{logical} formats output for Visual HELP; else
     formated for the DOS HELP versions (default)}
   \item{metric}{\link{logical} if using metric units (this only sets a
-    flag, please ensure the data are in either \enc{°}{degrees }C,
+    flag, please ensure the data are in either \enc{Â°}{degrees }C,
     mm/day and \eqn{\mbox{MJ}/(\mbox{m}^2 \cdot \mbox{day})}{MJ/(m^2*day)}
-    or \enc{°}{degrees }F, in./day and langleys/day)}
+    or \enc{Â°}{degrees }F, in./day and langleys/day)}
 }
 \details{
   This utility function is experimental and has not been extensively
@@ -43,15 +43,15 @@ write.help(file, dat, var = "", name = "", region, lat,
 \author{Mike Toews}
 \references{
   HELP 3.07 - Original version for the US EPA; free download \cr
-  \url{http://el.erdc.usace.army.mil/products.cfm?Topic=model&Type=landfill}
+  \url{https://www.epa.gov/land-research/hydrologic-evaluation-landfill-performance-help-model}
 
-  HELP 3.80D - Developed by Dr. Klaus Berger, University
+  HELP-D - Developed by Dr. Klaus Berger, University
   of Hamburg \cr
-  \url{http://www.geowiss.uni-hamburg.de/i-boden/fsimhelp_e.htm}
+  \url{https://www.geo.uni-hamburg.de/en/bodenkunde/service/help-model.html}
 
   Visual HELP - Uses a similar underlying code as HELP 3.07, but
   features a Windows GUI \cr
-  \url{http://www.swstechnology.com/groundwater-software/unsaturated-zone-modeling/visual-help}
+  \url{https://www.waterloohydrogeologic.com/visual-help/}
 }
 \seealso{\code{\link{read.msc}}, \code{\link{read.sdsm}},
   \code{\link{read.lars}}, \code{\link{conv365toGregorian}}}

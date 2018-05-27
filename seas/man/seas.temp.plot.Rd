@@ -1,7 +1,7 @@
 \name{seas.temp.plot}
 \alias{seas.temp.plot}
 \alias{plot.seas.temp}
-\encoding{latin1}
+\encoding{UTF-8}
 \title{Plot seasonal temperature normals}
 \description{
   Plot seasonal temperature normals using boxplots, and also plot
@@ -27,11 +27,11 @@ seas.temp.plot(x, width = 11, start = 1, rep = 0, start.day = 1,
     which relate to the \emph{minimum}, \emph{maximum} and \emph{mean}
     temperatures; the \code{units} attribute for the y-axis label are
     taken from the \code{minimum}, if available, otherwise it is
-    assumed it is in \enc{°}{deg}C}
+    assumed it is in \enc{Â°}{deg}C}
   \item{add.alt}{\code{logical}; add an alternative scale: if the units
-    are in \enc{°}{deg}C, the alternative is \enc{°}{deg}F; if units are
-    \enc{°}{deg}F, the alternative is \enc{°}{deg}C; and if units are K,
-    the alternative is \enc{°}{deg}C}
+    are in \enc{Â°}{deg}C, the alternative is \enc{Â°}{deg}F; if units are
+    \enc{Â°}{deg}F, the alternative is \enc{Â°}{deg}C; and if units are K,
+    the alternative is \enc{Â°}{deg}C}
   \item{ylim}{\code{c(min, max)} range for temperature, or y-axis}
   \item{main}{title for plot; if it is missing, then it will
     automatically be generated}

@@ -28,8 +28,7 @@
   British Columbia and the Yukon.
 }
 \source{
-  Provided by the Meteorological Service of Canada
-  (\url{http://www.msc.ec.gc.ca/}), with permission.
+  Provided by the Meteorological Service of Canada, with permission.
 }
 \seealso{\code{\link{getstnname}}, \code{\link{mscdata}},
   \code{\link{read.msc}}}

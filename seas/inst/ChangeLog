@@ -9,6 +9,8 @@ Version 0.5-1
    report missing elements
  - ignore 'format' parameter for 'read.msc'
  - DESCRIPTION files with Authors@R (fixes #4)
+ - update or remove URLs
+ - swtich Rd encoding to UTF-8
 
 Version 0.4-3
 2014-02-26

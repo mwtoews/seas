@@ -20,7 +20,7 @@ function (x1, x2, by="date", plot=FALSE) {
   vars.y <- paste(vars[vars %in% n2], ".y", sep="")
   dat <- merge(x1, x2, by=by, all=TRUE)
   if (plot) {
-    require(MASS)
+    requireNamespace(MASS)
     par(ask=TRUE)
     var <- 1:length(vars)
     var <- var[sapply(dat[,vars.x], is.numeric)]
@@ -48,7 +48,7 @@ function (x1, x2, by="date", plot=FALSE) {
         inter <- mean(y) - slope*mean(x)
         rsq <- cor(x, y)^2
         lim <- lim + diff(lim) * (4 * c(-1, 1) / 100)  # expand range +/-4%
-        image(kde2d(x, y, c(3, 3), 50, c(lim, lim)),
+        image(MASS::kde2d(x, y, c(3, 3), 50, c(lim, lim)),
               col=rev(terrain.colors(30)), xlim=lim, ylim=lim,
               xlab=n1, ylab=n2, main=var)
         if (n > 200) { x <- jitter(x); y <- jitter(y) }

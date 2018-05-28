@@ -20,7 +20,6 @@ function (x1, x2, by="date", plot=FALSE) {
   vars.y <- paste(vars[vars %in% n2], ".y", sep="")
   dat <- merge(x1, x2, by=by, all=TRUE)
   if (plot) {
-    requireNamespace(MASS)
     par(ask=TRUE)
     var <- 1:length(vars)
     var <- var[sapply(dat[,vars.x], is.numeric)]

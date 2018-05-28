@@ -7,8 +7,7 @@ Authors@R: person("Mike", "Toews", role = c("aut", "cre"),
                   email = "mwtoews@gmail.com")
 Author: Mike Toews [aut, cre]
 Maintainer: Mike Toews <mwtoews@gmail.com>
-Depends: R(>= 2.15.0)
-Suggests: MASS
+Depends: R(>= 2.15.0), MASS
 Description: Capable of deriving seasonal statistics, such as "normals", and
   analysis of seasonal data, such as departures. This package also has
   graphics capabilities for representing seasonal data, including boxplots for

@@ -12,6 +12,7 @@ Version 0.5-1
  - update or remove URLs
  - swtich Rd encoding to UTF-8
  - change title to title case
+ - modify MASS from suggests to depends
 
 Version 0.4-3
 2014-02-26

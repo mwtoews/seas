@@ -13,7 +13,7 @@ Version 0.5-1
  - swtich Rd encoding to UTF-8
  - change title to title case
  - modify MASS from suggests to depends
- - register dynamic symbols
+ - register dynamic symbols (fixes #3)
 
 Version 0.4-3
 2014-02-26

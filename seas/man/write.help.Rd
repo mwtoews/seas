@@ -16,8 +16,8 @@ write.help(file, dat, var = "", name = "", region, lat,
   \item{file}{name of output file; [DOS] HELP uses extensions
     \file{*.D4}, \file{*.D7}, and \file{*.D13} for daily precipitation,
     temperature and solar radiation, respectively; Visual HELP uses the
-    file names \file{\_weather1.dat}, \file{\_weather2.dat} and
-    \file{\_weather3.dat} for the same series of variables}
+    file names \file{_weather1.dat}, \file{_weather2.dat} and
+    \file{_weather3.dat} for the same series of variables}
   \item{dat}{\code{data.frame} of climate data}
   \item{var}{variable to be exported; must be one of \code{"precip"},
     \code{"t_mean"} or \code{"solar"}}

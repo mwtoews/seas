@@ -22,8 +22,8 @@ write.sdsm(dat, var, start, end, file = "")
   \item{var}{name of variable to be written from \code{dat}}
   \item{calendar}{calender used for data; if unspecified, this is
     assumed to be proleptic Gregorian (normal); however, for CCCma
-    models this should be "365\_day", and for Hadley models this should
-    be "360\_day"; see \code{\link{year.length}}}
+    models this should be "365_day", and for Hadley models this should
+    be "360_day"; see \code{\link{year.length}}}
 }
 \details{
   This function readings and writes climate data with the

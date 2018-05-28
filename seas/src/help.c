@@ -1,5 +1,5 @@
 /* Included with seas package for R
- * (c) Mike Toews 2007-2014
+ * (c) Mike Toews 2007-2018
  * License: GPL (>= 2)
  */
 

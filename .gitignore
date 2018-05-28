@@ -12,3 +12,5 @@ seas/src/symbols.rds
 .Rprofile
 packrat
 seas.Rproj
+packrat/lib*/
+packrat/src/

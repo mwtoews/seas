@@ -11,18 +11,4 @@ CRAN Submission Procedure
 
     $ R CMD check --as-cran seas_x.y-z.tar.gz
 
- 5. Upload to CRAN FTP::
-
-    $ curl -T seas_x.y-z.tar.gz ftp://cran.r-project.org/incoming/
-
- 6. Send an email:
-
-    :To: CRAN@R-project.org
-    :Subject: CRAN submission seas x.y-z
-    :Message:
-        Hi,
-        
-        I have uploaded a new version of seas to CRAN.
-        
-        Thanks,
-        -Mike
+ 5. Upload and submit package to https://cran.r-project.org/submit.html

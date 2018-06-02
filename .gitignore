@@ -10,6 +10,7 @@ seas/src/symbols.rds
 # Misc.
 .Rproj.user
 .Rprofile
+.Rhistory
 packrat
 seas.Rproj
 packrat/lib*/

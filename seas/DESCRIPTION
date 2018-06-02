@@ -1,7 +1,7 @@
 Package: seas
 Type: Package
-Version: 0.5-1
-Date: 2018-05-28
+Version: 0.5-2
+Date: 2018-06-02
 Title: Seasonal Analysis and Graphics, Especially for Climatology
 Authors@R: person("Mike", "Toews", role = c("aut", "cre"),
                   email = "mwtoews@gmail.com")

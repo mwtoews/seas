@@ -41,13 +41,13 @@ write.sdsm(dat, var, start, end, file = "")
 }
 \author{Mike Toews}
 \references{
-  Wilby, R.L., Dawson, C.W. and Barrow, E.M. 2002,
-  \sQuote{SDSM - a decision support tool for the assessment of regional
-    climate change impacts}, \emph{Environmental Modelling Software},
-  \bold{77}, 473--471.
+  Wilby, R.L., Dawson, C.W. and Barrow, E.M. 2002.
+  SDSM --- a decision support tool for the assessment of regional
+  climate change impacts, \emph{Environmental Modelling Software},
+  \bold{17} (2), 145--157, \doi{10.1016/S1364-8152(01)00060-3}
 
   SDSM can be downloaded free-of-charge for Windows platforms from \cr
-  \url{http://co-public.lboro.ac.uk/cocwd/SDSM/}
+  \url{https://www.sdsm.org.uk/}
 
   CGCM1 and HADCM3 model data for SDSM can be downloaded from the
   Canadian Climate Impacts and Scenarios website: \cr

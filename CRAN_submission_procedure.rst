@@ -12,3 +12,4 @@ CRAN Submission Procedure
     $ R CMD check --as-cran seas_x.y-z.tar.gz
 
  5. Upload and submit package to https://cran.r-project.org/submit.html
+ 6. Received automated email, and confirm the submission to CRAN

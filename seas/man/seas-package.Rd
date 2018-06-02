@@ -18,14 +18,14 @@ interarrivals, cumulative precipitation departures, find changes between two
 normals, and import data from archive formats.
 
 To get started, try some examples, such as \code{\link{seas.sum}},
-\code{\link{seas.norm}}. There will be more help added here someday! In
-the mean-time, please explore the various help pages and try the
-examples. Contact me for basic help and/or suggestions!
+\code{\link{seas.norm}}. There will be more help added here someday!
+
+Source code and issues are at \url{https://github.com/mwtoews/seas}
 }
 \references{
-  Toews, M.W., Whitfield, P.H., and Allen, D.M., Seasonal
-  statistics: The 'seas' package for R, Computers & Geosciences (2007),
-  doi:10.1016/j.cageo.2006.11.011
+  Toews, M.W., Whitfield, P.H., and Allen, D.M. 2007. Seasonal
+  statistics: The `seas' package for R. \emph{Computers & Geosciences},
+  \bold{33} (7), 944--951, \doi{10.1016/j.cageo.2006.11.011}
 }
 \author{Mike Toews}
 \examples{

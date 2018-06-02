@@ -135,7 +135,7 @@ mkseas(x, width = 11, start.day = 1, calendar, year)
   simply revert to a C locale: \code{\link{Sys.setlocale}(loc="C")}.
 }
 \author{Mike Toews}
-\references{\url{http://en.wikipedia.org/wiki/Solar_calendar}}
+\references{\url{https://en.wikipedia.org/wiki/Solar_calendar}}
 \seealso{\code{\link{mkann}}, \code{\link{seas.sum}}}
 \examples{
 # Demonstrate the number of days in each category

@@ -48,7 +48,7 @@ mkann(x, start.day, calendar)
   by each annum.
 }
 \author{Mike Toews}
-\references{\url{http://en.wikipedia.org/wiki/Gregorian_calendar}}
+\references{\url{https://en.wikipedia.org/wiki/Gregorian_calendar}}
 \seealso{\code{\link{mkseas}}, \code{\link{seas.sum}}}
 \examples{
 data(mscdata)

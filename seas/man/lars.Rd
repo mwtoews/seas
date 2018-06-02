@@ -100,10 +100,10 @@ write.lars.scenario(file, x1, x2, name = "anomaly")
   LARS-WG was can be downloaded for academic and research uses from \cr
   \url{http://www.rothamsted.bbsrc.ac.uk/mas-models/larswg.php}
 
-  Semenov, M.A. and Barrow, E.M. (1997) \dQuote{Use of a stochastic
+  Semenov, M.A. and Barrow, E.M. 1997. Use of a stochastic
     weather generator in the development of climate change
-    scenarios}. \emph{Climate Change}: \bold{35}, 397--414.
-    doi: 10.1023/A:1005342632279
+    scenarios. \emph{Climate Change}, \bold{35} (4), 397--414,
+    \doi{10.1023/A:1005342632279}
 }
 \seealso{\code{\link{write.help}}, \code{\link{read.sdsm}},
   \code{\link{summerland}} example synthetic data,

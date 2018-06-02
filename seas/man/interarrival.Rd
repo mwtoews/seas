@@ -43,7 +43,7 @@ interarrival(x, var = "precip", p.cut = 0.3, inv = FALSE)
 }
 \author{Mike Toews}
 \references{
-  von Storch, H. and Zwiers, F.W., 1999, \emph{Statistical analysis in
+  von Storch, H. and Zwiers, F.W., 1999. \emph{Statistical analysis in
     climate research}, Cambridge: Cambridge University Press, 484 p.
 }
 \seealso{\code{\link{plot.interarrival}}}

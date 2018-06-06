@@ -5,7 +5,7 @@ seas package for R
     Seasonal analysis and graphics, especially for climatology
 
 :Author: Mike Toews <mwtoews@gmail.com>
-:License: BSD License
+:License: GPL (>= 2)
 
 Description
 -----------

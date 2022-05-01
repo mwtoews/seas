@@ -1,6 +1,9 @@
 This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
+Version 0.6-0
+2022-05-01
+ - Fix issue with getstnname
 
 Version 0.5-2
 2018-06-02

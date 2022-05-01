@@ -98,7 +98,7 @@ write.lars.scenario(file, x1, x2, name = "anomaly")
 \author{Mike Toews}
 \references{
   LARS-WG was can be downloaded for academic and research uses from \cr
-  \url{http://www.rothamsted.bbsrc.ac.uk/mas-models/larswg.php}
+  \url{http://resources.rothamsted.ac.uk/mas-models/larswg}
 
   Semenov, M.A. and Barrow, E.M. 1997. Use of a stochastic
     weather generator in the development of climate change

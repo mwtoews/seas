@@ -82,10 +82,10 @@
 
   \verb{http://climate.weatheroffice.gc.ca/prods_servs/index_e.html#cdcd} (dead link) CDCD CD-ROM download location
 
-  \url{http://www.dosbox.com} for emulating DOS on non-Microsoft
+  \url{https://www.dosbox.com} for emulating DOS on non-Microsoft
   platforms
 
-  \url{http://www.intevation.de/~bernhard/archiv/uwm/canadian_climate_cdformat/} an alternative method of extracting data from the CDCD CD-ROMs using a Python module by Bernhard Reiter
+  \url{https://www.intevation.de/~bernhard/archiv/uwm/canadian_climate_cdformat/} an alternative method of extracting data from the CDCD CD-ROMs using a Python module by Bernhard Reiter
 }
 \author{Mike Toews}
 \examples{

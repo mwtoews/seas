@@ -51,7 +51,7 @@ write.help(file, dat, var = "", name = "", region, lat,
 
   Visual HELP - Uses a similar underlying code as HELP 3.07, but
   features a Windows GUI \cr
-  \url{https://www.waterloohydrogeologic.com/visual-help/}
+  \verb{https://www.waterloohydrogeologic.com/visual-help/} (dead link)
 }
 \seealso{\code{\link{read.msc}}, \code{\link{read.sdsm}},
   \code{\link{read.lars}}, \code{\link{conv365toGregorian}}}

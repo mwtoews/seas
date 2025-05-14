@@ -116,7 +116,7 @@ function(x, var, fun = "median", norm = "days", year.filter,
       if (precip.norm) {
         quan$snow <- quan$rain <- NA
         ## calculate the quantile of annual rain + snow, which equals
-        ## the anual precipitation
+        ## the annual precipitation
         quan$rainsnow <- secant(function(qu)
                                 return(ann$var
                                        - quantile(rain.a, qu,

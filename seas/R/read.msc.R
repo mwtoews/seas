@@ -127,7 +127,7 @@
       "%d element found: %s",
       "%d elements found: %s"),
       length(elem.name), paste(elem.name, collapse=", ")))
-    # Re-use a formatted string for later messages
+    # Reuse a formatted string for later messages
     msg_fmt <- paste0("%8s: %", floor(log10(nrow(d)) + 1), "d records")
   }
 

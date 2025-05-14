@@ -49,7 +49,7 @@
   for the colour of the lines. See \code{\link{SeasOpts}} for all
   available options, and instructions on how to change them.
 
-  The main and variable/unit label formating can also be customized by
+  The main and variable/unit label formatting can also be customized by
   setting other options, documented in \code{\link{SeasOpts}}.
 }
 \value{

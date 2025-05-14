@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the article from the preferred-citation.
+type: software
+title: seas
+version: 0.7-0
+date-released: "2025-05-14"
+abstract: Seasonal Analysis and Graphics, Especially for Climatology
+repository-artifact: https://cran.r-project.org/web/packages/seas/
+repository-code: https://github.com/mwtoews/seas
+license: GPL-2.0-or-later
+authors:
+- given-names: Michael W.
+  family-names: Toews
+  orcid: https://orcid.org/0000-0003-3657-7963
+preferred-citation:
+  type: article
+  title: "Seasonal statistics: the 'seas' package for R"
+  authors:
+  - given-names: Michael W.
+    family-names: Toews
+    orcid: https://orcid.org/0000-0003-3657-7963
+  - given-names: Paul H.
+    family-names: Whitfield
+    orcid: https://orcid.org/0000-0001-6937-9459
+  - given-names: Diana. M.
+    family-names: Allen
+    orcid: https://orcid.org/0000-0003-3541-2470
+  journal: Computers & Geosciences
+  doi: 10.1016/j.cageo.2006.11.011
+  year: 2007
+  volume: 33
+  issue: 7
+  start: 944
+  end: 951

@@ -25,7 +25,7 @@ write.help(file, dat, var = "", name = "", region, lat,
   \item{region}{\code{character}; region}
   \item{lat}{\code{numeric}; location latitude in decimal degrees}
   \item{visual.help}{\link{logical} formats output for Visual HELP; else
-    formated for the DOS HELP versions (default)}
+    formatted for the DOS HELP versions (default)}
   \item{metric}{\link{logical} if using metric units (this only sets a
     flag, please ensure the data are in either \enc{°}{degrees }C,
     mm/day and \eqn{\mbox{MJ}/(\mbox{m}^2 \cdot \mbox{day})}{MJ/(m^2*day)}

@@ -15,7 +15,7 @@ function (x1, x2, by="date", plot=FALSE) {
     stop(gettextf("problems encountered while trying to find %s in names of 'x1' and 'x2' for %s argument\n",
                   sQuote(by),sQuote("by")))
   vars.all <- union(n1, n2)  # keep `by' in this one
-  vars <- vars.all[!vars.all %in% by]  # stip `by' out
+  vars <- vars.all[!vars.all %in% by]  # strip `by' out
   vars.x <- paste(vars[vars %in% n1], ".x", sep="")
   vars.y <- paste(vars[vars %in% n2], ".y", sep="")
   dat <- merge(x1, x2, by=by, all=TRUE)

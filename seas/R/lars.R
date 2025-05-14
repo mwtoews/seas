@@ -84,7 +84,7 @@ function(x, stfile, datfile, site, lat, lon, alt) {
   conv <- data.frame(
     lars=I(c("year", "jday", "min", "max", "rain", "rad", "sun")),
     seas=I(c("year", "yday", "t_min", "t_max", "precip", "solar", "sun")))
-  # pre-proces st file, if selected
+  # pre-process st file, if selected
   mkst <- TRUE
   if (is.na(stfile) || (is.logical(stfile) && !stfile)) {
     mkst <- FALSE

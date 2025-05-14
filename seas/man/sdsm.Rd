@@ -20,7 +20,7 @@ write.sdsm(dat, var, start, end, file = "")
   \item{start}{starting year}
   \item{end}{ending year}
   \item{var}{name of variable to be written from \code{dat}}
-  \item{calendar}{calender used for data; if unspecified, this is
+  \item{calendar}{calendar used for data; if unspecified, this is
     assumed to be proleptic Gregorian (normal); however, for CCCma
     models this should be "365_day", and for Hadley models this should
     be "360_day"; see \code{\link{year.length}}}

@@ -1,16 +1,16 @@
-citHeader("To cite package seas in publications use:")
-
-citEntry(entry="article",
-        title = "Seasonal statistics: the 'seas' package for R",
-        author = personList(person("Michael","Toews","W.","mwtoews@gmail.com"),
-	         person("Paul","Whitfield","H.","paul.whitfield@ec.gc.ca"),
-                 person("Diana","Allen","M.","dallen@sfu.ca")),
-        journal = "Computers \\& Geosciences",
-        year = 2007,
-        volume = {33},
-        pages = {944--951},
-        number = {7},
-        doi = "10.1016/j.cageo.2006.11.011",
-        textVersion =
-        paste("Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal statistics: The `seas' package for R. Computers & Geosciences, 33(7): 944-951. doi:10.1016/j.cageo.2006.11.011")
+bibentry(
+  "Article",
+  title = "Seasonal statistics: the 'seas' package for R",
+  author = c(
+    person(given="Michael W.", family="Toews", email="mwtoews@gmail.com"),
+    person(given="Paul H.", family="Whitfield", email="paul.whitfield@ec.gc.ca"),
+    person(given="Diana M.", family="Allen", email="dallen@sfu.ca")),
+  journal = "Computers \\& Geosciences",
+  year = 2007,
+  volume = 33,
+  number = "7",
+  pages = "944--951",
+  doi = "10.1016/j.cageo.2006.11.011",
+  textVersion =
+    "Toews, M. W., Whitfield, P. H., and Allen, D. M., 2007. Seasonal statistics: The `seas' package for R. Computers & Geosciences, 33(7): 944-951. doi:10.1016/j.cageo.2006.11.011"
 )

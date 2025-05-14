@@ -26,7 +26,7 @@
     single number for the maximum (minimum set to zero), or a
     \code{c(min, max)} range with a defined minimum}
   \item{alim}{if \code{show.median}, this is the range for the annual
-    sums; this can either be a singe number for the maximum (minimum set
+    sums; this can either be a single number for the maximum (minimum set
     to zero, or a \code{c(min, max)} range with a defined minimum}
   \item{palette}{colours for \code{\link{image}}; the use of
     \code{\link{colorRampPalette}} is recommended}

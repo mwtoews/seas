@@ -1,6 +1,12 @@
 This is a summary of changes to the 'seas' package for R.
 Please submit any suggestions, additions, or errors to:
 	Mike Toews <mwtoews@gmail.com>
+
+Version 0.7-0
+2025-05-14
+ - Update citation and fix Rd syntax
+ - Fix typos, refresh web links
+
 Version 0.6-0
 2022-05-01
  - Fix issue with getstnname
@@ -14,7 +20,7 @@ Version 0.5-2
  - ignore 'format' parameter for 'read.msc'
  - DESCRIPTION files with Authors@R (fixes #4)
  - update or remove URLs
- - swtich Rd encoding to UTF-8
+ - switch Rd encoding to UTF-8
  - change title to title case
  - modify MASS from suggests to depends
  - register dynamic symbols (fixes #3)
@@ -83,7 +89,7 @@ Version 0.3-5
  - added 'year.length' function to determine the number of days per year
  - modified the behaviour of 'mksub' a bit, so it doesn't strip attributes
     from arrays used in data frames; instead certain attributes are not
-    transfered
+    transferred
  - casting integers for 'sprintf' calls for significant speed gains, in
     particular in 'read.lars'
  - simplified 'change' by removing the first 'var' parameter
@@ -121,7 +127,7 @@ Version 0.3-2
  - fix in 'mkseas' with proper order of 'days' (or 'bin.lengths')
  - re-added 'ylab' into a few plotting functions
  - fixed 'mksub' error if data.frame element is 'array'
- - made axises for most plotting functions to respect par('lwd')
+ - made axes for most plotting functions to respect par('lwd')
  - new option 'seas.bxp' for boxplot fill colour and outlier size
 
 Version 0.3-1

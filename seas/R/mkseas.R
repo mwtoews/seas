@@ -53,7 +53,7 @@ function (x, width=11, start.day=1, calendar, year) {
                          sQuote(sprintf("%s$%s", orig, date))))
         date <- x[[date]]
       } else {
-        stop(gettextf("could not find a %s colum in %s",
+        stop(gettextf("could not find a %s column in %s",
                       sQuote("date"), sQuote(orig)))
       }
     }

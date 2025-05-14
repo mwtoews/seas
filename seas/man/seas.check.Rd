@@ -44,7 +44,7 @@ seas.sum.check(x, orig, var, norm, year.filter, ann.only)
   \code{seas.df.check} returns a few helpful items from \code{x} in a
   \code{\link{list}} using \code{\link{invisible}}:
 
-  \itemize{
+  \describe{
     \item{\code{id}:}{station ID from one of \code{attr(x,"id")} or
       \code{x$id[1]}}
     \item{\code{name}:}{name of seasonal data, such as a place}

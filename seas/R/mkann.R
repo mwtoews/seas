@@ -13,7 +13,7 @@ function(x, start.day, calendar) {
                          sQuote(sprintf("%s$%s", orig, date))))
         x$date <- x[[date]]
       } else {
-        stop(gettextf("could not find a %s colum in %s",
+        stop(gettextf("could not find a %s column in %s",
                       sQuote("date"), sQuote(orig)))
       }
     }
@@ -38,7 +38,7 @@ function(x, start.day, calendar) {
   else
     rep(year.length / 12, 12)
   if (year.length == 365)
-    days[2] <- 28  # non-Gregorian calender
+    days[2] <- 28  # non-Gregorian calendar
   if (inherits(start.day, c("POSIXct", "Date"))) {
     start.std <- as.Date(format(start.day, "2000-%m-%d"))
     start.yday <- as.integer(format(start.std, "%j"))

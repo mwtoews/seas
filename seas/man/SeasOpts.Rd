@@ -37,11 +37,11 @@ setSeasOpts()
   \emph{Examples} section at the bottom.
 
   \describe{
-    \item{\code{seas.main}:}{formating style for main title:
+    \item{\code{seas.main}:}{formatting style for main title:
       \describe{
 	\item{\code{fmt}:}{format for \code{name} and \code{id} (if
 	  available) as the first \code{"\%s"}, followed by a range of
-	  years as the second \code{"\%s"}; these are formated by
+	  years as the second \code{"\%s"}; these are formatted by
 	  \code{\link{sprintf}}; \code{"\%s\n\%s"}}
 	\item{\code{rngsep}:}{separation between ranges of years; \code{"-"},
 	  other alternatives could be \code{" to "}}
@@ -51,7 +51,7 @@ setSeasOpts()
 	  main title; \code{TRUE}}
       }
     }
-    \item{\code{seas.label}:}{label formating for variables:
+    \item{\code{seas.label}:}{label formatting for variables:
       \describe{
 	\item{\code{fmt}:}{label for name and units (if available);
 	  \code{"\%s (\%s)"}, other alternatives could be

@@ -121,7 +121,7 @@ precip.norm(x, fun = "median", norm = "days", year.filter)
   \item{year.range}{from \code{x}}
   \item{start.day}{from \code{x}}
   \item{var}{same as input parameter}
-  \item{units}{units for \code{var}, usnig \code{\link{attr}}}
+  \item{units}{units for \code{var}, using \code{\link{attr}}}
   \item{long.name}{long name for \code{var}, using \code{attr}}
   \item{ann.only}{ann.only same as input parameter}
   \item{precip.only}{from same as input parameter}
